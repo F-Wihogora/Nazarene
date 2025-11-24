@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope:wght@400;500;700;800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#d46211",
+            "background-light": "#f8f7f6",
+            "background-dark": "#221810",
+          },
+          fontFamily: {
+            "display": ["Manrope"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div>
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-gray-600 dark:text-gray-300">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-gray-900 dark:text-white pr-10">Prayer Requests</h1>
+</div>
+<div class="px-4 pb-4">
+<div class="flex items-center justify-between rounded-lg bg-gray-200 dark:bg-gray-800 p-1">
+<button class="flex-1 rounded-md px-3 py-1.5 text-sm font-medium text-gray-800 dark:text-gray-200 bg-white dark:bg-gray-700/50 shadow-sm">All</button>
+<button class="flex-1 rounded-md px-3 py-1.5 text-sm font-medium text-gray-600 dark:text-gray-400">New</button>
+<button class="flex-1 rounded-md px-3 py-1.5 text-sm font-medium text-gray-600 dark:text-gray-400">Prayed For</button>
+</div>
+</div>
+</header>
+<main class="p-4 space-y-6">
+<section>
+<div class="flex justify-between items-center mb-4">
+<h2 class="text-xl font-bold text-gray-900 dark:text-white">Recent Requests</h2>
+<div class="flex items-center gap-2">
+<select class="rounded-lg border border-gray-200 dark:border-gray-700/50 bg-white/5 dark:bg-black/10 px-3 py-1.5 text-sm text-gray-600 dark:text-gray-300 focus:ring-primary focus:border-primary">
+<option>Categorize</option>
+<option>Healing</option>
+<option>Family</option>
+<option>Guidance</option>
+</select>
+<button class="flex h-8 w-8 items-center justify-center rounded-lg border border-gray-200 dark:border-gray-700/50 bg-white/5 dark:bg-black/10 text-gray-600 dark:text-gray-300">
+<span class="material-symbols-outlined text-xl">search</span>
+</button>
+</div>
+</div>
+<div class="space-y-4">
+<div class="rounded-xl border border-gray-200 dark:border-gray-700/50 bg-white/5 dark:bg-black/10 p-4">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-bold text-gray-900 dark:text-white">Healing for my Mother</p>
+<p class="text-sm text-gray-600 dark:text-gray-400">Submitted by John Doe - 2 days ago</p>
+</div>
+<div class="flex items-center gap-1 text-sm font-medium text-primary">
+<span class="text-xs bg-primary/10 text-primary px-2 py-1 rounded-full">Healing</span>
+</div>
+</div>
+<p class="mt-2 text-gray-700 dark:text-gray-300">"Please pray for my mother, Sarah, who is undergoing surgery next week. Pray for the doctors' wisdom and for her speedy recovery."</p>
+<div class="mt-4 flex items-center justify-between">
+<button class="flex items-center gap-2 text-sm font-medium text-green-500">
+<span class="material-symbols-outlined text-base">check_circle</span>
+<span>Mark as Prayed For</span>
+</button>
+<button class="flex items-center gap-2 text-sm font-medium text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined text-base">edit_note</span>
+<span>Add Note</span>
+</button>
+</div>
+</div>
+<div class="rounded-xl border border-gray-200 dark:border-gray-700/50 bg-white/5 dark:bg-black/10 p-4">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-bold text-gray-900 dark:text-white">Guidance for Career Path</p>
+<p class="text-sm text-gray-600 dark:text-gray-400">Submitted by Jane Smith - 5 days ago</p>
+</div>
+<div class="flex items-center gap-1 text-sm font-medium text-blue-500">
+<span class="text-xs bg-blue-500/10 text-blue-500 px-2 py-1 rounded-full">Guidance</span>
+</div>
+</div>
+<p class="mt-2 text-gray-700 dark:text-gray-300">"I am at a crossroads in my career. I need prayers for wisdom and clarity to make the right decision for my future."</p>
+<div class="mt-4 flex items-center justify-between">
+<button class="flex items-center gap-2 text-sm font-medium text-green-500">
+<span class="material-symbols-outlined text-base">check_circle</span>
+<span>Mark as Prayed For</span>
+</button>
+<button class="flex items-center gap-2 text-sm font-medium text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined text-base">edit_note</span>
+<span>Add Note</span>
+</button>
+</div>
+</div>
+<div class="rounded-xl border border-gray-200 dark:border-gray-700/50 bg-white/5 dark:bg-black/10 p-4">
+<div class="flex items-start justify-between">
+<div>
+<p class="font-bold text-gray-900 dark:text-white">Family Reconciliation</p>
+<p class="text-sm text-gray-600 dark:text-gray-400">Submitted by Anonymous - 1 week ago</p>
+</div>
+<div class="flex items-center gap-1 text-sm font-medium text-purple-500">
+<span class="text-xs bg-purple-500/10 text-purple-500 px-2 py-1 rounded-full">Family</span>
+</div>
+</div>
+<p class="mt-2 text-gray-700 dark:text-gray-300">"Pray for reconciliation and restoration in my family. There has been a lot of conflict and hurt."</p>
+<div class="mt-4 flex items-center justify-between">
+<button class="flex items-center gap-2 text-sm font-medium text-green-500">
+<span class="material-symbols-outlined text-base">check_circle</span>
+<span>Mark as Prayed For</span>
+</button>
+<button class="flex items-center gap-2 text-sm font-medium text-gray-500 dark:text-gray-400">
+<span class="material-symbols-outlined text-base">edit_note</span>
+<span>Add Note</span>
+</button>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-gray-200 dark:border-gray-700/50 pb-safe">
+<div class="flex justify-around p-2">
+<a class="flex flex-col items-center justify-center gap-1 p-2 rounded-lg text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 p-2 rounded-lg text-primary" href="#">
+<span class="material-symbols-outlined">volunteer_activism</span>
+<span class="text-xs font-bold">Prayers</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 p-2 rounded-lg text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="text-xs font-medium">Members</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 p-2 rounded-lg text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-xs font-medium">Settings</span>
+</a>
+</div>
+</footer>
+</div>
+
+</body></html>

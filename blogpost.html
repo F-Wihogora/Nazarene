@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#1173d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+            "warm-beige": "#F5F5DC",
+            "dark-gold": "#B8860B",
+            "light-gold": "#D4AF37",
+            "dark-maroon": "#800000"
+          },
+          fontFamily: {
+            display: ["Newsreader"]
+          },
+          borderRadius: {
+            DEFAULT: "0.25rem",
+            lg: "0.5rem",
+            xl: "0.75rem",
+            full: "9999px"
+          }
+        }
+      }
+    };
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: "FILL" 0, "wght" 400, "GRAD" 0, "opsz" 24;
+    }
+    body {
+      min-height: max(884px, 100dvh);
+      background-color: var(--warm-beige);
+    }
+    .dark body {
+      background-color: var(--background-dark);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-warm-beige dark:bg-background-dark font-display text-dark-maroon dark:text-warm-beige">
+<div class="flex flex-col min-h-screen justify-between">
+<div class="flex-grow">
+<div id="zzz-header"></div>
+<main class="p-4">
+<article>
+<header class="mb-4">
+<h1 class="text-3xl font-bold text-dark-maroon dark:text-light-gold mb-2">
+              The Power of Community in Faith
+            </h1>
+<div class="text-sm text-dark-maroon/80 dark:text-warm-beige/80 flex items-center gap-4">
+<span>By Pastor John Doe</span>
+<span>October 26, 2023</span>
+</div>
+</header>
+<div class="prose prose-lg max-w-none text-dark-maroon/90 dark:text-warm-beige/90 leading-relaxed">
+<p>
+              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed
+              euismod, nisl nec ultricies lacinia, nisl nisl aliquam nisl, eget
+              aliquam nisl nisl sit amet nisl. Donec euismod, nisl nec ultricies
+              lacinia, nisl nisl aliquam nisl, eget aliquam nisl nisl sit amet
+              nisl.
+            </p>
+<p>
+              Praesent commodo cursus magna, vel scelerisque nisl consectetur
+              et. Vivamus sagittis lacus vel augue laoreet rutrum faucibus
+              dolor auctor.
+            </p>
+<p>
+              Aenean lacinia bibendum nulla sed consectetur. Cras mattis
+              consectetur purus sit amet fermentum. Curabitur blandit tempus
+              porttitor.
+            </p>
+</div>
+</article>
+<div class="mt-8">
+<div class="flex items-center justify-start gap-4">
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-light-gold/20 dark:bg-dark-gold/30 text-dark-maroon dark:text-light-gold font-medium">
+<span class="material-symbols-outlined">thumb_up</span>
+              Like
+            </button>
+<button class="flex items-center gap-2 px-4 py-2 rounded-lg bg-light-gold/20 dark:bg-dark-gold/30 text-dark-maroon dark:text-light-gold font-medium">
+<span class="material-symbols-outlined">share</span>
+              Share
+            </button>
+</div>
+</div>
+<div class="mt-8">
+<h3 class="text-xl font-bold mb-4 text-dark-maroon dark:text-light-gold">Comments</h3>
+<div class="space-y-4">
+<div class="bg-white/50 dark:bg-black/20 p-4 rounded-lg">
+<p class="font-semibold text-dark-maroon dark:text-warm-beige">Jane Smith</p>
+<p class="text-sm text-dark-maroon/80 dark:text-warm-beige/80">Such an inspiring message, thank you Pastor!</p>
+</div>
+<div class="bg-white/50 dark:bg-black/20 p-4 rounded-lg">
+<p class="font-semibold text-dark-maroon dark:text-warm-beige">Mark Johnson</p>
+<p class="text-sm text-dark-maroon/80 dark:text-warm-beige/80">This really spoke to me. God bless.</p>
+</div>
+</div>
+<form class="mt-6">
+<textarea class="w-full h-24 p-2 rounded-lg bg-white/50 dark:bg-black/20 border border-light-gold/50 dark:border-dark-gold/50 focus:ring-dark-gold focus:border-dark-gold placeholder-dark-maroon/60 dark:placeholder-warm-beige/60 text-dark-maroon dark:text-warm-beige" placeholder="Write a comment..."></textarea>
+<button class="mt-2 w-full h-12 rounded-lg bg-dark-gold text-white font-bold tracking-wide flex items-center justify-center">
+              Post Comment
+            </button>
+</form>
+</div>
+</main>
+</div>
+<div id="zzz-footer"></div>
+<script src="include-zzz.js"></script>
+</div>
+
+</body></html>

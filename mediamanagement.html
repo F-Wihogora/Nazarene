@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Media Management - Nazarene Remera Church</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#d46211",
+            "background-light": "#f8f7f6",
+            "background-dark": "#221810",
+          },
+          fontFamily: {
+            "display": ["Newsreader"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-stone-900 dark:text-stone-100">
+<div class="flex flex-col min-h-screen">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="p-2 text-stone-900 dark:text-stone-100">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="flex-1 text-xl font-bold text-center text-stone-900 dark:text-stone-100">Media Management</h1>
+<button class="p-2 text-stone-900 dark:text-stone-100">
+<span class="material-symbols-outlined">add</span>
+</button>
+</div>
+<div class="h-px bg-primary/20"></div>
+</header>
+<main class="flex-grow p-4 space-y-6">
+<div class="flex flex-col items-center justify-center p-6 border-2 border-dashed border-primary/50 rounded-xl bg-primary/5 dark:bg-primary/10">
+<span class="material-symbols-outlined text-4xl text-primary mb-2">cloud_upload</span>
+<p class="text-lg font-medium text-stone-800 dark:text-stone-200">Upload Media</p>
+<p class="text-sm text-stone-600 dark:text-stone-400 text-center">Drag &amp; drop files here or click to select</p>
+<input class="sr-only" id="media-upload" multiple="" type="file"/>
+<label class="mt-4 px-4 py-2 bg-primary text-white rounded-lg cursor-pointer hover:bg-primary/90" for="media-upload">
+          Select Files
+        </label>
+</div>
+<div class="space-y-4">
+<h2 class="text-lg font-semibold text-stone-800 dark:text-stone-200">Event Photos</h2>
+<div class="grid grid-cols-2 gap-4">
+<div class="relative group">
+<img alt="Church Event Photo" class="w-full h-32 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBn1Ut3FCFjVUAeMetoEdC6FXXlAWLziLLbxJn5TDXL3oOdRWkNGqQtZeVxwOX6x1efBMuRfzfeZBwYxhriIDurXhg6B8f2wRkheWwHdkZ617PIQoh_-_ki_syhW5GRJPq-4V181KCkPsy6T7A59PNxT01k_exXAvnceUlFxVM1wzVY2m593qS4pze5F3RRe6KVo_Nyu3ATFy-9GN9KiP0MB6G_iUZcEu3fLalAWSpGNmHvzTqnE4Fu5aaviqoBWxUKL_0lwBm8"/>
+<div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity rounded-lg">
+<button class="p-2 text-white hover:text-red-500"><span class="material-symbols-outlined">delete</span></button>
+</div>
+</div>
+<div class="relative group">
+<img alt="Church Event Photo" class="w-full h-32 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAxolOD0zqRh7UoNp00v61jPbHVtgdWFMuolDA9lso6bWmbkXw0LNPAR7nq72JAyOJq9sVM38rm_v1C27x3NDDw6m2TN9IdKMMA_HnFe8l3vq4oibE1Z-yikDmABzkchY5D0pTQqJA9UP_3kszlhqMbeGDAxRXJErhapI25Q5TjH2Zq0zi2LrYN-QpCQ2WVhgH6TxBIhKfNbUV_IAnf8qZzEUMjajbWm5BpShE1RGVKIAvdrmSb2VnqH_B62SqnRhSMZ4ksfAWT"/>
+<div class="absolute inset-0 bg-black/50 opacity-0 group-hover:opacity-100 flex items-center justify-center transition-opacity rounded-lg">
+<button class="p-2 text-white hover:text-red-500"><span class="material-symbols-outlined">delete</span></button>
+</div>
+</div>
+</div>
+</div>
+<div class="space-y-4">
+<h2 class="text-lg font-semibold text-stone-800 dark:text-stone-200">Event Videos</h2>
+<div class="bg-stone-100/50 dark:bg-stone-800/50 p-4 rounded-lg flex items-center space-x-4">
+<div class="w-24 h-16 bg-stone-300 dark:bg-stone-700 rounded-md flex items-center justify-center">
+<span class="material-symbols-outlined text-4xl text-stone-500">play_circle</span>
+</div>
+<div class="flex-grow">
+<h3 class="font-semibold text-stone-900 dark:text-stone-100">Easter Celebration Highlights</h3>
+<p class="text-sm text-stone-600 dark:text-stone-300">April 9, 2023</p>
+</div>
+<button class="p-2 text-stone-600 dark:text-stone-300 hover:text-red-500"><span class="material-symbols-outlined">delete</span></button>
+</div>
+</div>
+<div class="space-y-4">
+<h2 class="text-lg font-semibold text-stone-800 dark:text-stone-200">Livestream Management</h2>
+<div class="bg-stone-100/50 dark:bg-stone-800/50 p-4 rounded-lg space-y-4">
+<div>
+<label class="block text-sm font-medium text-stone-700 dark:text-stone-300" for="livestream-title">Livestream Title</label>
+<input class="mt-1 w-full bg-stone-100 dark:bg-stone-800 border-stone-300 dark:border-stone-700 rounded-lg p-3 focus:ring-primary focus:border-primary placeholder-stone-500 dark:placeholder-stone-400 text-stone-900 dark:text-stone-100" id="livestream-title" name="livestream-title" placeholder="e.g., Sunday Service" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-stone-700 dark:text-stone-300" for="livestream-url">Livestream URL</label>
+<input class="mt-1 w-full bg-stone-100 dark:bg-stone-800 border-stone-300 dark:border-stone-700 rounded-lg p-3 focus:ring-primary focus:border-primary placeholder-stone-500 dark:placeholder-stone-400 text-stone-900 dark:text-stone-100" id="livestream-url" name="livestream-url" placeholder="https://youtube.com/live/..." type="url"/>
+</div>
+<button class="w-full py-2 px-4 bg-primary text-white font-semibold rounded-lg hover:bg-primary/90">
+            Update Livestream
+          </button>
+</div>
+</div>
+</main>
+<footer class="sticky bottom-0 z-10 bg-background-light dark:bg-background-dark border-t border-primary/20">
+<nav class="flex justify-around p-2">
+<a class="flex flex-col items-center justify-center w-1/4 text-stone-500 dark:text-stone-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">dashboard</span>
+<span class="text-xs font-medium">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center w-1/4 text-primary dark:text-primary" href="#">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1">perm_media</span>
+<span class="text-xs font-bold">Media</span>
+</a>
+<a class="flex flex-col items-center justify-center w-1/4 text-stone-500 dark:text-stone-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">bar_chart</span>
+<span class="text-xs font-medium">Reports</span>
+</a>
+<a class="flex flex-col items-center justify-center w-1/4 text-stone-500 dark:text-stone-400 hover:text-primary dark:hover:text-primary transition-colors" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-xs font-medium">Members</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

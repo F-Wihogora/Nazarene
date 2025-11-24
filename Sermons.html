@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Sermons</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#8a6e4b",
+                        "background-light": "#fdfaf6",
+                        "background-dark": "#1a1510",
+                        "card-light": "#ffffff",
+                        "card-dark": "#2c2a27",
+                        "text-light": "#1a1510",
+                        "text-dark": "#fdfaf6",
+                        "muted-light": "#a19b93",
+                        "muted-dark": "#7a756f",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "0.75rem",
+                        "xl": "1rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col justify-between">
+<div class="flex-grow">
+<div id="zzz-header"></div>
+<main class="p-4">
+<div class="relative mb-6">
+<input class="w-full pl-10 pr-4 py-2 rounded-lg border-gray-300 dark:border-gray-700 bg-card-light dark:bg-card-dark focus:border-primary focus:ring-primary" placeholder="Search sermons by topic or date" type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-muted-light dark:text-muted-dark">search</span>
+</div>
+<div class="space-y-6">
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-lg shadow-sm">
+<div class="relative mb-2 aspect-video rounded-md overflow-hidden">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc1WdK6lbCtQ7PYqOulBNtxo0X9SgdYTQDkrpqn5UhgOEbG_FgmNhhNme7-xKWBDsYuNj6fEpzXImM9RDCBluSgG6M_VRPD959goMYdRrfR4tBBvhkzu3PI2cKKSrIXJwUBP5hgUc7LL8DdTGJd62KKW3kxqg6alem0o0-4RboLOwVRkUlC0aWOKldYslPKnZAl0O9uZepInZIIxEsT2pNfK35G7-HBD9ls2CIy0lcVZ5btZrB9_lVBUtFgP17WFS4JnhVybhY"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<button class="text-white">
+<span class="material-symbols-outlined text-6xl">play_circle</span>
+</button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-lg font-bold">The Power of Forgiveness</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Pastor John Doe - Oct 26, 2023</p>
+</div>
+<button class="text-muted-light dark:text-muted-dark hover:text-primary dark:hover:text-primary transition-colors">
+<span class="material-symbols-outlined">favorite_border</span>
+</button>
+</div>
+<div class="flex gap-2 mt-3">
+<button class="flex items-center gap-2 px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">
+<span class="material-symbols-outlined text-base">play_arrow</span>
+                                Video
+                            </button>
+<button class="flex items-center gap-2 px-3 py-1 bg-gray-200/50 dark:bg-gray-700/50 rounded-full text-sm">
+<span class="material-symbols-outlined text-base">graphic_eq</span>
+                                Audio
+                            </button>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-lg shadow-sm">
+<div class="relative mb-2 aspect-video rounded-md overflow-hidden">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc1WdK6lbCtQ7PYqOulBNtxo0X9SgdYTQDkrpqn5UhgOEbG_FgmNhhNme7-xKWBDsYuNj6fEpzXImM9RDCBluSgG6M_VRPD959goMYdRrfR4tBBvhkzu3PI2cKKSrIXJwUBP5hgUc7LL8DdTGJd62KKW3kxqg6alem0o0-4RboLOwVRkUlC0aWOKldYslPKnZAl0O9uZepInZIIxEsT2pNfK35G7-HBD9ls2CIy0lcVZ5btZrB9_lVBUtFgP17WFS4JnhVybhY"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<button class="text-white">
+<span class="material-symbols-outlined text-6xl">play_circle</span>
+</button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-lg font-bold">Living a Life of Purpose</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Pastor Jane Smith - Oct 19, 2023</p>
+</div>
+<button class="text-primary dark:text-primary transition-colors">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 1;">favorite</span>
+</button>
+</div>
+<div class="flex gap-2 mt-3">
+<button class="flex items-center gap-2 px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">
+<span class="material-symbols-outlined text-base">play_arrow</span>
+                                Video
+                            </button>
+<button class="flex items-center gap-2 px-3 py-1 bg-gray-200/50 dark:bg-gray-700/50 rounded-full text-sm">
+<span class="material-symbols-outlined text-base">graphic_eq</span>
+                                Audio
+                            </button>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark p-4 rounded-lg shadow-sm">
+<div class="relative mb-2 aspect-video rounded-md overflow-hidden">
+<img class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCc1WdK6lbCtQ7PYqOulBNtxo0X9SgdYTQDkrpqn5UhgOEbG_FgmNhhNme7-xKWBDsYuNj6fEpzXImM9RDCBluSgG6M_VRPD959goMYdRrfR4tBBvhkzu3PI2cKKSrIXJwUBP5hgUc7LL8DdTGJd62KKW3kxqg6alem0o0-4RboLOwVRkUlC0aWOKldYslPKnZAl0O9uZepInZIIxEsT2pNfK35G7-HBD9ls2CIy0lcVZ5btZrB9_lVBUtFgP17WFS4JnhVybhY"/>
+<div class="absolute inset-0 bg-black/40 flex items-center justify-center">
+<button class="text-white">
+<span class="material-symbols-outlined text-6xl">play_circle</span>
+</button>
+</div>
+</div>
+<div class="flex justify-between items-start">
+<div>
+<h3 class="text-lg font-bold">Faith in Times of Trouble</h3>
+<p class="text-sm text-muted-light dark:text-muted-dark">Guest Speaker - Oct 12, 2023</p>
+</div>
+<button class="text-muted-light dark:text-muted-dark hover:text-primary dark:hover:text-primary transition-colors">
+<span class="material-symbols-outlined">favorite_border</span>
+</button>
+</div>
+<div class="flex gap-2 mt-3">
+<button class="flex items-center gap-2 px-3 py-1 bg-gray-200/50 dark:bg-gray-700/50 rounded-full text-sm">
+<span class="material-symbols-outlined text-base">play_arrow</span>
+                                Video
+                            </button>
+<button class="flex items-center gap-2 px-3 py-1 bg-primary/10 text-primary rounded-full text-sm">
+<span class="material-symbols-outlined text-base">graphic_eq</span>
+                                Audio
+                            </button>
+</div>
+</div>
+</div>
+</main>
+</div>
+<div id="zzz-footer"></div>
+<script src="include-zzz.js"></script>
+</div>
+
+</body></html>

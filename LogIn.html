@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#8B5CF6", // A warmer purple
+                        "primary-dark": "#7C3AED",
+                        "background-light": "#FDFBF8", // A warmer off-white
+                        "background-dark": "#1C1917", // A warmer dark gray
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#292524",
+                        "text-light": "#1C1917",
+                        "text-dark": "#E7E5E4",
+                        "subtle-light": "#A8A29E",
+                        "subtle-dark": "#57534E",
+                        "border-light": "#E7E5E4",
+                        "border-dark": "#44403C",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        lg: "0.75rem",
+                        xl: "1rem",
+                        full: "9999px",
+                    },
+                },
+            },
+        };
+    </script>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="flex flex-col h-screen">
+<div id="zzz-header"></div>
+<main class="flex-grow flex flex-col items-center justify-center p-4">
+<div class="w-full max-w-md">
+<div class="text-center mb-10">
+<h1 class="text-3xl font-bold text-text-light dark:text-text-dark">Welcome Back</h1>
+<p class="text-subtle-light dark:text-subtle-dark mt-2">Sign in to your account</p>
+</div>
+<form id="login-form" class="space-y-6">
+<div>
+<label class="block text-sm font-medium text-subtle-light dark:text-subtle-dark mb-1" for="username">Username or Email</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-subtle-light dark:text-subtle-dark">person</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark focus:ring-primary focus:border-primary text-text-light dark:text-text-dark placeholder-subtle-light dark:placeholder-subtle-dark" id="username" name="username" placeholder="you@example.com" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-subtle-light dark:text-subtle-dark mb-1" for="password">Password</label>
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-subtle-light dark:text-subtle-dark">lock</span>
+<input class="w-full pl-10 pr-4 py-3 rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark focus:ring-primary focus:border-primary text-text-light dark:text-text-dark placeholder-subtle-light dark:placeholder-subtle-dark" id="password" name="password" placeholder="••••••••" type="password"/>
+</div>
+<div class="text-right mt-2">
+<a class="text-sm font-medium text-primary hover:text-primary-dark" href="forgotpassword.html">Forgot Password?</a>
+</div>
+</div>
+<div class="flex items-center">
+<input class="h-4 w-4 rounded border-gray-300 text-primary focus:ring-primary" id="two-factor" name="two-factor" type="checkbox"/>
+<label class="ml-2 block text-sm text-subtle-light dark:text-subtle-dark" for="two-factor">Enable Two-Factor Authentication (Admin/Pastor)</label>
+</div>
+<button class="w-full bg-primary text-white font-bold py-3 rounded-lg text-lg hover:bg-primary-dark transition-colors" type="submit">
+              Sign In
+            </button>
+</form>
+<p class="text-center text-sm text-subtle-light dark:text-subtle-dark mt-8">
+          Don't have an account? <a class="font-medium text-primary hover:text-primary-dark" href="Register.html">Sign Up</a>
+</p>
+</div>
+</main>
+<div id="zzz-footer"></div>
+<script src="include-zzz.js"></script>
+<script>
+  const API = 'http://localhost:4000';
+  document.getElementById('login-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const email = document.getElementById('username').value.trim();
+    const password = document.getElementById('password').value;
+    try {
+      const res = await fetch(`${API}/auth/login`, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ email, password })
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Login failed');
+      localStorage.setItem('auth_token', data.token);
+      window.location.href = '../dashboard.html';
+    } catch (err) {
+      alert(err.message);
+    }
+  });
+</script>
+</div>
+
+</body></html>

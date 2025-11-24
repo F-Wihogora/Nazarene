@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Register - Nazarene Remera Church</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script id="tailwind-config">
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#d46211",
+            "background-light": "#f8f7f6",
+            "background-dark": "#221810",
+          },
+          fontFamily: {
+            "display": ["Newsreader", "serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-stone-900 dark:text-stone-100">
+<div class="flex flex-col min-h-screen">
+<div id="zzz-header"></div>
+<main class="flex-grow flex flex-col justify-center px-4 sm:px-6 lg:px-8">
+<div class="w-full max-w-md mx-auto space-y-6">
+<form id="register-form" action="#" class="space-y-6" method="POST">
+<div>
+<label class="block text-sm font-medium text-stone-700 dark:text-stone-300" for="full-name">Full Name</label>
+<div class="mt-1">
+<input autocomplete="name" class="form-input block w-full rounded-lg border-transparent bg-background-light/50 dark:bg-background-dark/50 focus:ring-primary focus:border-primary placeholder-stone-500 dark:placeholder-stone-400 p-4" id="full-name" name="full-name" placeholder="Enter your full name" required="" type="text"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-stone-700 dark:text-stone-300" for="email">Email</label>
+<div class="mt-1">
+<input autocomplete="email" class="form-input block w-full rounded-lg border-transparent bg-background-light/50 dark:bg-background-dark/50 focus:ring-primary focus:border-primary placeholder-stone-500 dark:placeholder-stone-400 p-4" id="email" name="email" placeholder="Enter your email" required="" type="email"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-stone-700 dark:text-stone-300" for="password">Password</label>
+<div class="mt-1">
+<input autocomplete="new-password" class="form-input block w-full rounded-lg border-transparent bg-background-light/50 dark:bg-background-dark/50 focus:ring-primary focus:border-primary placeholder-stone-500 dark:placeholder-stone-400 p-4" id="password" name="password" placeholder="Enter your password" required="" type="password"/>
+</div>
+</div>
+<div>
+<label class="block text-sm font-medium text-stone-700 dark:text-stone-300" for="confirm-password">Confirm Password</label>
+<div class="mt-1">
+<input autocomplete="new-password" class="form-input block w-full rounded-lg border-transparent bg-background-light/50 dark:bg-background-dark/50 focus:ring-primary focus:border-primary placeholder-stone-500 dark:placeholder-stone-400 p-4" id="confirm-password" name="confirm-password" placeholder="Confirm your password" required="" type="password"/>
+</div>
+</div>
+<div>
+<button class="w-full flex justify-center py-4 px-4 border border-transparent rounded-lg shadow-sm text-base font-medium text-white bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary" type="submit">
+                        Register
+                    </button>
+</div>
+</form>
+<div class="text-center">
+<a class="font-medium text-primary hover:text-primary/90" href="LogIn.html">
+                    Already have an account? Sign In
+                </a>
+</div>
+</div>
+</main>
+<div id="zzz-footer"></div>
+<script src="include-zzz.js"></script>
+<script>
+  const API = 'http://localhost:4000';
+  document.getElementById('register-form').addEventListener('submit', async (e) => {
+    e.preventDefault();
+    const fullName = document.getElementById('full-name').value.trim();
+    const email = document.getElementById('email').value.trim();
+    const password = document.getElementById('password').value;
+    const confirm = document.getElementById('confirm-password').value;
+    if (password !== confirm) { alert('Passwords do not match'); return; }
+    try {
+      const res = await fetch(`${API}/auth/register`, {
+        method: 'POST', headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ fullName, email, password })
+      });
+      const data = await res.json();
+      if (!res.ok) throw new Error(data.error || 'Registration failed');
+      alert('Registration submitted. Await admin approval.');
+      window.location.href = 'LogIn.html';
+    } catch (err) {
+      alert(err.message);
+    }
+  });
+</script>
+</div>
+
+</body></html>

@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            primary: "#8B5CF6", // A warmer purple
+            "primary-dark": "#7C3AED",
+            "background-light": "#FDFBF8", // A warmer off-white
+            "background-dark": "#1C1917", // A warmer dark gray
+            "card-light": "#FFFFFF",
+            "card-dark": "#292524",
+            "text-light": "#1C1917",
+            "text-dark": "#E7E5E4",
+            "subtle-light": "#A8A29E",
+            "subtle-dark": "#57534E",
+            "border-light": "#E7E5E4",
+            "border-dark": "#44403C",
+          },
+          fontFamily: {
+            display: ["Inter", "sans-serif"],
+          },
+          borderRadius: {
+            DEFAULT: "0.5rem",
+            lg: "0.75rem",
+            xl: "1rem",
+            full: "9999px",
+          },
+        },
+      },
+    };
+  </script>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="flex flex-col h-screen">
+<header class="bg-background-light dark:bg-background-dark sticky top-0 z-10 px-4 py-3 border-b border-border-light dark:border-border-dark">
+<div class="flex items-center justify-between">
+<button class="p-2 -ml-2">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">arrow_back</span>
+</button>
+<h1 class="text-xl font-bold text-center text-text-light dark:text-text-dark">
+        My Profile
+      </h1>
+<button class="p-2 -mr-2">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">notifications</span>
+</button>
+</div>
+</header>
+<main class="flex-grow overflow-y-auto p-4 space-y-6">
+<div class="flex flex-col items-center space-y-4">
+<div class="relative">
+<div class="w-24 h-24 rounded-full bg-gray-200 dark:bg-gray-700 flex items-center justify-center">
+<span class="material-symbols-outlined text-5xl text-subtle-light dark:text-subtle-dark">person</span>
+</div>
+<button class="absolute bottom-0 right-0 bg-primary text-white p-2 rounded-full shadow-md">
+<span class="material-symbols-outlined" style="font-size: 16px;">edit</span>
+</button>
+</div>
+<div class="text-center">
+<h2 class="text-2xl font-bold text-text-light dark:text-text-dark">John Doe</h2>
+<p class="text-subtle-light dark:text-subtle-dark">johndoe@email.com</p>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-xl shadow-sm p-4 space-y-4">
+<h3 class="text-lg font-semibold text-text-light dark:text-text-dark">Personal Information</h3>
+<div>
+<label class="block text-sm font-medium text-subtle-light dark:text-subtle-dark mb-1" for="full-name">Full Name</label>
+<input class="w-full px-4 py-2 rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark focus:ring-primary focus:border-primary text-text-light dark:text-text-dark placeholder-subtle-light dark:placeholder-subtle-dark" id="full-name" name="full-name" placeholder="John Doe" type="text" value="John Doe"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-subtle-light dark:text-subtle-dark mb-1" for="phone-number">Phone Number</label>
+<input class="w-full px-4 py-2 rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark focus:ring-primary focus:border-primary text-text-light dark:text-text-dark placeholder-subtle-light dark:placeholder-subtle-dark" id="phone-number" name="phone-number" placeholder="+1234567890" type="tel" value="+250 788 123 456"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-subtle-light dark:text-subtle-dark mb-1" for="address">Address</label>
+<input class="w-full px-4 py-2 rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark focus:ring-primary focus:border-primary text-text-light dark:text-text-dark placeholder-subtle-light dark:placeholder-subtle-dark" id="address" name="address" placeholder="123 Main St, Anytown" type="text" value="KG 123 St, Kigali"/>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-xl shadow-sm p-4 space-y-4">
+<h3 class="text-lg font-semibold text-text-light dark:text-text-dark">Preferences</h3>
+<div>
+<label class="block text-sm font-medium text-subtle-light dark:text-subtle-dark mb-1" for="communication-preference">Communication Preference</label>
+<select class="w-full px-4 py-2 rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark focus:ring-primary focus:border-primary text-text-light dark:text-text-dark placeholder-subtle-light dark:placeholder-subtle-dark" id="communication-preference" name="communication-preference">
+<option selected="">Email</option>
+<option>SMS</option>
+<option>Both</option>
+</select>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-xl shadow-sm p-4 space-y-4">
+<h3 class="text-lg font-semibold text-text-light dark:text-text-dark">Privacy Settings</h3>
+<div class="space-y-4">
+<div class="flex items-center justify-between">
+<span class="font-medium text-text-light dark:text-text-dark">Show email on directory</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-dark/50 dark:peer-focus:ring-primary rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between">
+<span class="font-medium text-text-light dark:text-text-dark">Show phone on directory</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox" value=""/>
+<div class="w-11 h-6 bg-gray-200 peer-focus:outline-none peer-focus:ring-4 peer-focus:ring-primary-dark/50 dark:peer-focus:ring-primary rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full rtl:peer-checked:after:-translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:start-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+</div>
+<button class="w-full bg-primary text-white font-bold py-3 rounded-lg text-md hover:bg-primary-dark transition-colors">
+      Save Changes
+    </button>
+</main>
+<nav class="bg-card-light dark:bg-card-dark border-t border-border-light dark:border-border-dark px-4 pt-2 pb-4">
+<div class="flex justify-around">
+<a class="flex flex-col items-center gap-1 text-subtle-light dark:text-subtle-dark" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-subtle-light dark:text-subtle-dark" href="#">
+<span class="material-symbols-outlined">event</span>
+<span class="text-xs font-medium">Events</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-subtle-light dark:text-subtle-dark" href="#">
+<span class="material-symbols-outlined">volunteer_activism</span>
+<span class="text-xs font-medium">Give</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-subtle-light dark:text-subtle-dark" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-xs font-medium">Groups</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>

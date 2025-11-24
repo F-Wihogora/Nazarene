@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1173d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+            "text-light": "#0d141b",
+            "text-dark": "#ffffff",
+            "text-secondary-light": "#4c739a",
+            "text-secondary-dark": "#a0b3c6",
+            "border-light": "#e7edf3",
+            "border-dark": "#2d3748"
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 bg-background-light dark:bg-background-dark/80 backdrop-blur-sm border-b border-border-light dark:border-border-dark">
+<div class="flex items-center p-4">
+<button class="text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold text-text-light dark:text-text-dark flex-1 text-center pr-10">Settings</h1>
+</div>
+</header>
+<main class="p-4 space-y-8">
+<section>
+<h2 class="text-xl font-bold text-text-light dark:text-text-dark mb-4">General</h2>
+<div class="bg-background-light dark:bg-background-dark/50 rounded-lg shadow-sm">
+<a class="flex items-center justify-between p-4 border-b border-border-light dark:border-border-dark/50 hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors duration-200" href="#">
+<div>
+<p class="font-medium text-text-light dark:text-text-dark">Church Name</p>
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Nazarene Remera Church</p>
+</div>
+<span class="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-4 border-b border-border-light dark:border-border-dark/50 hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors duration-200" href="#">
+<div>
+<p class="font-medium text-text-light dark:text-text-dark">Location</p>
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Kigali, Rwanda</p>
+</div>
+<span class="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-4 border-b border-border-light dark:border-border-dark/50 hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors duration-200" href="#">
+<div>
+<p class="font-medium text-text-light dark:text-text-dark">Contact Number</p>
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">+250 788 123 456</p>
+</div>
+<span class="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark">chevron_right</span>
+</a>
+<a class="flex items-center justify-between p-4 hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors duration-200 rounded-b-lg" href="#">
+<div>
+<p class="font-medium text-text-light dark:text-text-dark">Email Address</p>
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">info@nazareneremera.org</p>
+</div>
+<span class="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark">chevron_right</span>
+</a>
+</div>
+</section>
+<section>
+<h2 class="text-xl font-bold text-text-light dark:text-text-dark mb-4">User Roles &amp; Permissions</h2>
+<div class="bg-background-light dark:bg-background-dark/50 rounded-lg shadow-sm">
+<a class="flex items-center justify-between p-4 hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors duration-200 rounded-lg" href="#">
+<div>
+<p class="font-medium text-text-light dark:text-text-dark">Roles &amp; Permissions</p>
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Manage user roles and permissions</p>
+</div>
+<span class="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark">chevron_right</span>
+</a>
+</div>
+</section>
+<section>
+<h2 class="text-xl font-bold text-text-light dark:text-text-dark mb-4">Notifications</h2>
+<div class="bg-background-light dark:bg-background-dark/50 rounded-lg shadow-sm">
+<a class="flex items-center justify-between p-4 hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors duration-200 rounded-lg" href="#">
+<div>
+<p class="font-medium text-text-light dark:text-text-dark">Notification Settings</p>
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Configure notification preferences</p>
+</div>
+<span class="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark">chevron_right</span>
+</a>
+</div>
+</section>
+<section>
+<h2 class="text-xl font-bold text-text-light dark:text-text-dark mb-4">Integrations</h2>
+<div class="bg-background-light dark:bg-background-dark/50 rounded-lg shadow-sm">
+<a class="flex items-center justify-between p-4 hover:bg-primary/5 dark:hover:bg-primary/10 transition-colors duration-200 rounded-lg" href="#">
+<div>
+<p class="font-medium text-text-light dark:text-text-dark">Integrations</p>
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Connect with other services</p>
+</div>
+<span class="material-symbols-outlined text-text-secondary-light dark:text-text-secondary-dark">chevron_right</span>
+</a>
+</div>
+</section>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-background-light dark:bg-background-dark/80 backdrop-blur-sm border-t border-border-light dark:border-border-dark">
+<nav class="flex justify-around p-2">
+<a class="flex flex-col items-center justify-center gap-1 text-text-secondary-light dark:text-text-secondary-dark w-1/4" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-text-secondary-light dark:text-text-secondary-dark w-1/4" href="#">
+<span class="material-symbols-outlined">group</span>
+<span class="text-xs font-medium">Users</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-text-secondary-light dark:text-text-secondary-dark w-1/4" href="#">
+<span class="material-symbols-outlined">payments</span>
+<span class="text-xs font-medium">Finances</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-primary w-1/4" href="#">
+<span class="material-symbols-outlined">settings</span>
+<span class="text-xs font-medium">Settings</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

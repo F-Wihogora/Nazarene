@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Finance Management - Nazarene Remera Church</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d46211",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221810",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-sans text-stone-900 dark:text-stone-100">
+<div class="flex flex-col min-h-screen">
+<header class="flex items-center p-4 border-b border-stone-200 dark:border-stone-700">
+<button class="text-stone-900 dark:text-stone-100">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<h1 class="flex-1 text-center text-xl font-bold font-display pr-6">Finance Management</h1>
+</header>
+<main class="flex-grow p-4 sm:px-6 lg:px-8">
+<div class="space-y-8">
+<div class="bg-primary/10 dark:bg-primary/20 p-6 rounded-xl">
+<h2 class="text-lg font-display font-bold text-primary mb-4">Financial Overview</h2>
+<div class="grid grid-cols-2 gap-4 text-center">
+<div>
+<p class="text-sm text-stone-600 dark:text-stone-300">Total Donations</p>
+<p class="text-2xl font-bold text-stone-800 dark:text-stone-100">$12,540</p>
+</div>
+<div>
+<p class="text-sm text-stone-600 dark:text-stone-300">Total Expenses</p>
+<p class="text-2xl font-bold text-stone-800 dark:text-stone-100">$7,890</p>
+</div>
+<div class="col-span-2">
+<p class="text-sm text-stone-600 dark:text-stone-300">Net Balance</p>
+<p class="text-3xl font-bold text-primary">$4,650</p>
+</div>
+</div>
+</div>
+<div class="grid grid-cols-2 gap-4">
+<button class="bg-white dark:bg-background-dark/50 rounded-lg p-4 flex flex-col items-center justify-center text-center space-y-2 hover:bg-stone-50 dark:hover:bg-background-dark">
+<span class="material-symbols-outlined text-primary text-3xl">volunteer_activism</span>
+<span class="font-semibold text-sm">Donation Reports</span>
+</button>
+<button class="bg-white dark:bg-background-dark/50 rounded-lg p-4 flex flex-col items-center justify-center text-center space-y-2 hover:bg-stone-50 dark:hover:bg-background-dark">
+<span class="material-symbols-outlined text-primary text-3xl">receipt_long</span>
+<span class="font-semibold text-sm">Track Expenses</span>
+</button>
+<button class="bg-white dark:bg-background-dark/50 rounded-lg p-4 flex flex-col items-center justify-center text-center space-y-2 hover:bg-stone-50 dark:hover:bg-background-dark">
+<span class="material-symbols-outlined text-primary text-3xl">summarize</span>
+<span class="font-semibold text-sm">Generate Summary</span>
+</button>
+<button class="bg-white dark:bg-background-dark/50 rounded-lg p-4 flex flex-col items-center justify-center text-center space-y-2 hover:bg-stone-50 dark:hover:bg-background-dark">
+<span class="material-symbols-outlined text-primary text-3xl">add_card</span>
+<span class="font-semibold text-sm">Add Expense</span>
+</button>
+</div>
+<div>
+<h2 class="text-lg font-display font-bold text-stone-800 dark:text-stone-200 mb-4">Recent Transactions</h2>
+<div class="space-y-4">
+<div class="bg-white dark:bg-background-dark/50 rounded-lg p-4 flex items-center justify-between">
+<div>
+<p class="font-semibold">Donation from John Doe</p>
+<p class="text-sm text-stone-600 dark:text-stone-400">October 26, 2023</p>
+</div>
+<p class="font-bold text-green-600">+$150.00</p>
+</div>
+<div class="bg-white dark:bg-background-dark/50 rounded-lg p-4 flex items-center justify-between">
+<div>
+<p class="font-semibold">Offering - Sunday Service</p>
+<p class="text-sm text-stone-600 dark:text-stone-400">October 22, 2023</p>
+</div>
+<p class="font-bold text-green-600">+$1,230.50</p>
+</div>
+<div class="bg-white dark:bg-background-dark/50 rounded-lg p-4 flex items-center justify-between">
+<div>
+<p class="font-semibold">Building Maintenance</p>
+<p class="text-sm text-stone-600 dark:text-stone-400">October 20, 2023</p>
+</div>
+<p class="font-bold text-red-600">-$450.00</p>
+</div>
+<div class="bg-white dark:bg-background-dark/50 rounded-lg p-4 flex items-center justify-between">
+<div>
+<p class="font-semibold">Tithe from Alice Williams</p>
+<p class="text-sm text-stone-600 dark:text-stone-400">October 19, 2023</p>
+</div>
+<p class="font-bold text-green-600">+$200.00</p>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-auto">
+<div class="w-full bg-center bg-no-repeat bg-cover" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuDw6WocviDqjLRGUT1mRKBTzovJuUveS7MKcgxmDHSjfrvgVTI60vC83rNHkCovIrVzMcIsnhUKCF80AvdbaiTPYN02E1W_Sa4RQEAQHowb-8kVIyokaGtwraPhfaju_MXIREpNJk_4cuaD_N-I1CNa1qGAeJif6Wri9gHW8pjsW2dF5lhh4aEyJjGFjaF7rSD_hOCTflLKYQeCSIRDXZ17XXwaQ2xd02yg1P_OlBw1G2QGtT6xIFXR9yWc0vJtnMxhWRcDUg1W"); aspect-ratio: 390 / 320;'>
+</div>
+</footer>
+</div>
+
+</body></html>

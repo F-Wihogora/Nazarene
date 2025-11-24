@@ -1,0 +1,141 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1173d4",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: { "DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px" },
+                },
+            },
+        }
+    </script>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between group/design-root overflow-x-hidden">
+<div class="flex-grow">
+<header class="flex items-center justify-between p-4 pb-2 bg-background-light dark:bg-background-dark">
+<button class="text-black dark:text-white">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H40a8,8,0,0,1,0-16H216A8,8,0,0,1,224,128ZM40,72H216a8,8,0,0,0,0-16H40a8,8,0,0,0,0,16ZM216,184H40a8,8,0,0,0,0,16H216a8,8,0,0,0,0-16Z"></path>
+</svg>
+</button>
+<h1 class="text-lg font-bold text-black dark:text-white flex-1 text-center">Media Dashboard</h1>
+<div class="w-6"></div> 
+</header>
+<main class="p-4">
+<section class="mb-8">
+<h2 class="text-xl font-bold text-black dark:text-white mb-4">Recent Uploads</h2>
+<div class="flex overflow-x-auto [-ms-scrollbar-style:none] [scrollbar-width:none] [&amp;::-webkit-scrollbar]:hidden -mx-4 px-4">
+<div class="flex items-stretch gap-4">
+<div class="flex flex-col gap-2 w-40">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBp89R6ZPzXhljbMd-PV1NvQ6Veq8_rwSgLlOP1T3OIlUoQsEryE6SmwKDgefrWo1y9ZRR4_kaS8v5pXv9LLWyuhgzj7gMTFeXIGDoorxxpeZhdWV7i4ApV6lIuy5Q2Vqowv9tG1Jbz3NWUgdl5J4BcfHHQ0ZOVCexbRwatUHFL-jQb2UMiQuI-TZ5vA7M3N03we4gqxsRNdjSXm5U-5bHL7GIn4VqebjBh83-iiXwhWHvyK7xsKFqsRyG9jAkrdS_DOvi3yUSb");'></div>
+<p class="text-sm font-medium text-black dark:text-white">Sunday Service</p>
+</div>
+<div class="flex flex-col gap-2 w-40">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuBlqefm3_7IY-WVmQ0v95ITbD7H06znx5pN6Sh523ToAitc8VN-O3jX5bceF4dTXZdZwVBbxKnUGa7OD-0N2nHPxAdhsD8WRqNl1ST_MxqxfzjMFGIh95OhAUWNJDVHFwT11Wym4fx5irmyJ9yx-ltw0Q3o0mkwUpt36Z24nOfgEEXTACGIfq88093iusdL37hUPfMyOcD2jHA_zdNZD_OsaDZu7FormvlgxnacoXNLaxQqRgha0MA_xdWttN-UX4yl1MzWxlp0");'></div>
+<p class="text-sm font-medium text-black dark:text-white">Youth Event</p>
+</div>
+<div class="flex flex-col gap-2 w-40">
+<div class="w-full bg-center bg-no-repeat aspect-square bg-cover rounded-lg" style='background-image: url("https://lh3.googleusercontent.com/aida-public/AB6AXuA1_Lg5ZpnSRZ5kYlf1gJ3lZNcL4tHF-6va0h5JIr1FBiEBAWOF9l94wm54Soy0i1HxmHEFJkyEIWelooURC2lb9EIsCLqnoyx_WV1Tjsfd_yjZxLClFDjZATHuSB4q8-9cFtoGcHk7s7KrkP7MFdkucNnrInNfkEdzYu05fwMSpome-VSPSX0HvR2142msk657msATm4k901CAXMVnooHMotvFyd-pgzSkCWISMgbt22P0obOuGacF5l81oSUtfTx0ZYRePaha");'></div>
+<p class="text-sm font-medium text-black dark:text-white">Community Outreach</p>
+</div>
+</div>
+</div>
+</section>
+<section class="mb-8">
+<h2 class="text-xl font-bold text-black dark:text-white mb-4">Upcoming Livestreams</h2>
+<div class="space-y-3">
+<div class="flex items-center gap-4 bg-white dark:bg-black/20 p-3 rounded-lg">
+<div class="flex items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 text-primary shrink-0 size-12">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M164.44,105.34l-48-32A8,8,0,0,0,104,80v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,129.05V95l25.58,17ZM216,40H40A16,16,0,0,0,24,56V168a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,128H40V56H216V168Zm16,40a8,8,0,0,1-8,8H32a8,8,0,0,1,0-16H224A8,8,0,0,1,232,208Z"></path>
+</svg>
+</div>
+<div class="flex-grow">
+<p class="text-base font-medium text-black dark:text-white">Sunday Service</p>
+<p class="text-sm text-black/60 dark:text-white/60">Sunday, 10:00 AM</p>
+</div>
+</div>
+<div class="flex items-center gap-4 bg-white dark:bg-black/20 p-3 rounded-lg">
+<div class="flex items-center justify-center rounded-lg bg-primary/20 dark:bg-primary/30 text-primary shrink-0 size-12">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M164.44,105.34l-48-32A8,8,0,0,0,104,80v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,129.05V95l25.58,17ZM216,40H40A16,16,0,0,0,24,56V168a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,128H40V56H216V168Zm16,40a8,8,0,0,1-8,8H32a8,8,0,0,1,0-16H224A8,8,0,0,1,232,208Z"></path>
+</svg>
+</div>
+<div class="flex-grow">
+<p class="text-base font-medium text-black dark:text-white">Bible Study</p>
+<p class="text-sm text-black/60 dark:text-white/60">Wednesday, 7:00 PM</p>
+</div>
+</div>
+</div>
+</section>
+<div class="flex flex-col sm:flex-row gap-3 pt-4">
+<button class="flex-1 flex items-center justify-center rounded-lg h-12 px-4 bg-primary text-white text-sm font-bold">
+<span>Upload Photos</span>
+</button>
+<button class="flex-1 flex items-center justify-center rounded-lg h-12 px-4 bg-primary/20 dark:bg-primary/30 text-primary text-sm font-bold">
+<span>Schedule Livestream</span>
+</button>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-background-light dark:bg-background-dark border-t border-black/10 dark:border-white/10">
+<nav class="flex justify-around items-center px-2 py-2">
+<a class="flex flex-col items-center justify-center gap-1 text-primary w-1/5" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"></path>
+</svg>
+<p class="text-xs font-medium">Home</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-black/60 dark:text-white/60 w-1/5" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-96-88v64a8,8,0,0,1-16,0V132.94l-4.42,2.22a8,8,0,0,1-7.16-14.32l16-8A8,8,0,0,1,112,120Zm59.16,30.45L152,176h16a8,8,0,0,1,0,16H136a8,8,0,0,1-6.4-12.8l28.78-38.37A8,8,0,1,0,145.07,132a8,8,0,1,1-13.85-8A24,24,0,0,1,176,136,23.76,23.76,0,0,1,171.16,150.45Z"></path>
+</svg>
+<p class="text-xs font-medium">Events</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-black/60 dark:text-white/60 w-1/5" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M164.44,105.34l-48-32A8,8,0,0,0,104,80v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,129.05V95l25.58,17ZM216,40H40A16,16,0,0,0,24,56V168a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,128H40V56H216V168Zm16,40a8,8,0,0,1-8,8H32a8,8,0,0,1,0-16H224A8,8,0,0,1,232,208Z"></path>
+</svg>
+<p class="text-xs font-medium">Sermons</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-black/60 dark:text-white/60 w-1/5" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M152,120H136V56h8a32,32,0,0,1,32,32,8,8,0,0,0,16,0,48.05,48.05,0,0,0-48-48h-8V24a8,8,0,0,0-16,0V40h-8a48,48,0,0,0,0,96h8v64H104a32,32,0,0,1-32-32,8,8,0,0,0-16,0,48.05,48.05,0,0,0,48,48h16v16a8,8,0,0,0,16,0V216h16a48,48,0,0,0,0-96Zm-40,0a32,32,0,0,1,0-64h8v64Zm40,80H136V136h16a32,32,0,0,1,0,64Z"></path>
+</svg>
+<p class="text-xs font-medium">Donate</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-black/60 dark:text-white/60 w-1/5" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M222.37,158.46l-47.11-21.11-.13-.06a16,16,0,0,0-15.17,1.4,8.12,8.12,0,0,0-.75.56L134.87,160c-15.42-7.49-31.34-23.29-38.83-38.51l20.78-24.71c.2-.25.39-.5.57-.77a16,16,0,0,0,1.32-15.06l0-.12L97.54,33.64a16,16,0,0,0-16.62-9.52A56.26,56.26,0,0,0,32,80c0,79.4,64.6,144,144,144a56.26,56.26,0,0,0,55.88-48.92A16,16,0,0,0,222.37,158.46ZM176,208A128.14,128.14,0,0,1,48,80,40.2,40.2,0,0,1,82.87,40a.61.61,0,0,0,0,.12l21,47L83.2,111.86a6.13,6.13,0,0,0-.57.77,16,16,0,0,0-1,15.7c9.06,18.53,27.73,37.06,46.46,46.11a16,16,0,0,0,15.75-1.14,8.44,8.44,0,0,0,.74-.56L168.89,152l47,21.05h0s.08,0,.11,0A40.21,40.21,0,0,1,176,208Z"></path>
+</svg>
+<p class="text-xs font-medium">Contact</p>
+</a>
+</nav>
+<div class="h-safe-area-bottom bg-background-light dark:bg-background-dark"></div>
+</footer>
+</div>
+
+
+</body></html>

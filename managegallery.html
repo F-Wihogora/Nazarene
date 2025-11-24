@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d46211",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221810",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings:
+                'FILL' 0,
+                'wght' 400,
+                'GRAD' 0,
+                'opsz' 24
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-zinc-900 dark:text-zinc-100">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between">
+<div class="flex-grow">
+<header class="flex items-center p-4 pb-2 justify-between sticky top-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm z-10">
+<button class="text-zinc-900 dark:text-zinc-100">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<h1 class="text-lg font-bold flex-1 text-center pr-6">Manage Gallery</h1>
+</header>
+<div class="px-4 py-3">
+<div class="relative w-full">
+<div class="absolute inset-y-0 left-0 flex items-center pl-4 pointer-events-none text-zinc-500 dark:text-zinc-400">
+<svg fill="currentColor" height="20px" viewBox="0 0 256 256" width="20px" xmlns="http://www.w3.org/2000/svg">
+<path d="M229.66,218.34l-50.07-50.06a88.11,88.11,0,1,0-11.31,11.31l50.06,50.07a8,8,0,0,0,11.32-11.32ZM40,112a72,72,0,1,1,72,72A72.08,72.08,0,0,1,40,112Z"></path>
+</svg>
+</div>
+<input class="w-full h-12 pl-12 pr-4 rounded-lg bg-primary/10 dark:bg-primary/20 text-zinc-900 dark:text-zinc-100 placeholder-zinc-500 dark:placeholder-zinc-400 border-none focus:ring-2 focus:ring-primary" placeholder="Search media" type="text"/>
+</div>
+</div>
+<div class="flex gap-2 p-4 pt-0 overflow-x-auto">
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-primary/30 px-4">
+<p class="text-sm font-medium">Date</p>
+<svg fill="currentColor" height="16px" viewBox="0 0 256 256" width="16px" xmlns="http://www.w3.org/2000/svg">
+<path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+</svg>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-primary/30 px-4">
+<p class="text-sm font-medium">Type</p>
+<svg fill="currentColor" height="16px" viewBox="0 0 256 256" width="16px" xmlns="http://www.w3.org/2000/svg">
+<path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+</svg>
+</button>
+<button class="flex h-10 shrink-0 items-center justify-center gap-x-2 rounded-lg bg-primary/20 dark:bg-primary/30 px-4">
+<p class="text-sm font-medium">Album</p>
+<svg fill="currentColor" height="16px" viewBox="0 0 256 256" width="16px" xmlns="http://www.w3.org/2000/svg">
+<path d="M213.66,101.66l-80,80a8,8,0,0,1-11.32,0l-80-80A8,8,0,0,1,53.66,90.34L128,164.69l74.34-74.35a8,8,0,0,1,11.32,11.32Z"></path>
+</svg>
+</button>
+</div>
+<div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 p-4 pt-0">
+<div class="relative group">
+<img alt="Church event photo" class="w-full aspect-square object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQwg41CMpGVYvm-Rh5GrtgXHYMeDb3UDqYmJHL0-k_vP7aXzuURVaH-hX4SBDp03GtO5E3W7hqlBnXelkqNK6OjoFhC3-e4XIUjeAWJs1sSbSMDxOmsyMgbFS6EZPUBub7KkSwRTMSg-HLr-ANmamixHQzA5a2cH5f6KgckBT3XjJY-eVNJa5wIWniqNrf1Ex9PaCs3g973bjNsK4Qyq5ZFwmYsIGS_bNHCzwABkWC5JFuQmnD1mQynQPIXOo8rHJQaItyzsGL"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
+<input class="absolute top-2 left-2 h-5 w-5 rounded form-checkbox bg-white/50 text-primary border-none focus:ring-primary" type="checkbox"/>
+</div>
+<div class="relative group">
+<img alt="Church event photo" class="w-full aspect-square object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA35gcWoWjw4JiL8eAoVN6wXHP1MsGtmzLKh1GrbH2igs9FK0STIKupxqPdiT70IkaAT8OpeTysPRmCCeDbNaEEhyrRsN-fQsdRK_ABHXNFr4sy7MB8MMND5Vmt7YDJ47DIUxAa38BHHty9H8Eqg7RcLv3Ajbl23Uq4Hu-IJi1JdiABdZqlqM4LwvXOuC2fAwARzxt5GrJsVMcOTSmfbaCBBcPsYrpE2FoBnAFMIkQ8471GlBnPi3t6hyZyIkMoRpiTQSX5ef9X"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
+<input class="absolute top-2 left-2 h-5 w-5 rounded form-checkbox bg-white/50 text-primary border-none focus:ring-primary" type="checkbox"/>
+</div>
+<div class="relative group">
+<img alt="Church event photo" class="w-full aspect-square object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAEgSXgdl8HXErwqSpT2mqtjnTLuYfErPFazjyUs7l3_lfwsszBQCvb7g7aEch6UP3RIIhS9WvN8ZrrWP1096A6eHBFpw0-NNuDPGaqn1hBw9I3SoLqySJgxFyt3ix3-5kQDlhS9tbPxZoM37q49MLbaOTTSjhP0MoxIbV_Mvo9W55SQqoCQ4cLonJ4Y4bRGRvoIwk8GU8lEFsZn6mtyrnKzh8kSHnVW-JvW38iVfBA5J6ALurJPxDn4bh70SP3-oKsf9izD6Pf"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
+<input class="absolute top-2 left-2 h-5 w-5 rounded form-checkbox bg-white/50 text-primary border-none focus:ring-primary" type="checkbox"/>
+</div>
+<div class="relative group">
+<img alt="Church event photo" class="w-full aspect-square object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC_O0_vCf7pXpET1i59PKS6mivQDPkRfVByssifMpWh0d3jcZV1QzLfXNudVEOceiB7jhlZvctLHLRD5douUlWwC86MlLPLfUNBxpRJBDngDuJkFiPALoF95sPB4_VJn-v-ffyMfvQDB_tXD_ZMRocxhS0sm5pk7bd9WyuByNTyqnBJFvgpypF9yCC0DJJoY8NvaC_fqLmrH8tpn8zeVx3QvORJbwYJfDHvryOK1V2Swb-xQR1noPyqaFrnWkr-WWnX94JtE6KQ"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
+<input class="absolute top-2 left-2 h-5 w-5 rounded form-checkbox bg-white/50 text-primary border-none focus:ring-primary" type="checkbox"/>
+</div>
+<div class="relative group">
+<img alt="Church event photo" class="w-full aspect-square object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAjKJCi4Wzep4lOq4ozgkYk_BITTl9QffL2SyXrP8j0fjORz2wQQnUjSUNf7gG7SPKoaz3nK2nF6Id4wj82_n9AOAJuaQLCsVgm-xDSZGi42HtUj84-y2ioF_otYkAr1wiFqj5Wg-qRDP2eKwLCBNAdbUX0v0WVibEgpsRyeRRzn_Ovn7B5id8CMMyySyZyMiPt4mULr4aYdaQDNONq1aBgcFXyl1dBtRoTheGJiAyUOqPgCtJciyn3KIlPzbT0vdl58m6AVsh3"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
+<input class="absolute top-2 left-2 h-5 w-5 rounded form-checkbox bg-white/50 text-primary border-none focus:ring-primary" type="checkbox"/>
+</div>
+<div class="relative group">
+<img alt="Church event photo" class="w-full aspect-square object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB7vPGSsf4RGIrfBq_vQ5fb4PJcUZADYn7obY--_Qhqyo_p1x_W23csuD_UFZHtfWx2nTfTdlENsnCf37c7eQj-YyhxumIiA7j_KmRSBmEzGezy_NyHDgSYSMl3w5kw8IAHTOdXuikozKpRx0z3ElItLecW7MwDXxQio_vkUh7aNZpUzIYgK62bU9q7tQy3ZmjSdWk957A7hGGQ1gRZ5J6KaNn3y7mSSpDcp0XZlgFtKSuXF-xLgvbguLkddfK8-trTn6T3nAFj"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
+<input class="absolute top-2 left-2 h-5 w-5 rounded form-checkbox bg-white/50 text-primary border-none focus:ring-primary" type="checkbox"/>
+</div>
+<div class="relative group">
+<img alt="Church event photo" class="w-full aspect-square object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCeglQnBx7hBqM0_MTrWBeH1z65LRLiGNYaghXDsotKymj8JM_sj3ijwe5eN0NyE3pIsCpNqgTXpVrRT_EcNAOCc4DZU4pjxRTiXsQr7mii09_ECH8sIaEqGokr17TY57hQAUE3h3CrMpvhirrjcX0zLLXHCO5Xech1RuQRNJZYETnKiozLw4lg19GWbiXCx_9hAuzOOatVI7-CnCcX7xbMsDRk3QmIVAlNavVpUZqdIIhnHxNy6jd_9HqMyNgCV_YOsEPMw3i0"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
+<input class="absolute top-2 left-2 h-5 w-5 rounded form-checkbox bg-white/50 text-primary border-none focus:ring-primary" type="checkbox"/>
+</div>
+<div class="relative group">
+<img alt="Church event photo" class="w-full aspect-square object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCdUMY2ZFqKnlTw9ySAuVg0JcqzDPttd83JKo_CTnFbGFMMScC0se7b9zDPgMRSPObAfm-wMppb_EUUZdIyxLcH-iLOLkYt1yhr6wlczXyOQfR9vGG5tQD-LWxWp_XUHVLJegxOK3RyQoVSSYHpVca1Smg4nina1jv2W9EXRjHx-BRc19TPe46N6sFAnpk1_xAElGb4M9P0cTtS9z_SENwiGCgoRZDkd7BN6gBO9xqjHaJawW1YsvbRymKQ44A61J3Gn63sPzhL"/>
+<div class="absolute inset-0 bg-black/20 opacity-0 group-hover:opacity-100 transition-opacity rounded-lg"></div>
+<input class="absolute top-2 left-2 h-5 w-5 rounded form-checkbox bg-white/50 text-primary border-none focus:ring-primary" type="checkbox"/>
+</div>
+</div>
+</div>
+<footer class="sticky bottom-0 bg-background-light dark:bg-background-dark border-t border-primary/20 dark:border-primary/30 pb-safe">
+<div class="flex justify-around p-2">
+<a class="flex flex-col items-center justify-center gap-1 w-1/4 text-zinc-500 dark:text-zinc-400" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M218.83,103.77l-80-75.48a1.14,1.14,0,0,1-.11-.11,16,16,0,0,0-21.53,0l-.11.11L37.17,103.77A16,16,0,0,0,32,115.55V208a16,16,0,0,0,16,16H96a16,16,0,0,0,16-16V160h32v48a16,16,0,0,0,16,16h48a16,16,0,0,0,16-16V115.55A16,16,0,0,0,218.83,103.77ZM208,208H160V160a16,16,0,0,0-16-16H112a16,16,0,0,0-16,16v48H48V115.55l.11-.1L128,40l79.9,75.43.11.1Z"></path>
+</svg>
+<p class="text-xs font-medium">Dashboard</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 w-1/4 text-zinc-500 dark:text-zinc-400" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M208,32H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32Zm0,176H48V48H208V208Zm-32-80a8,8,0,0,1-8,8H136v32a8,8,0,0,1-16,0V136H88a8,8,0,0,1,0-16h32V88a8,8,0,0,1,16,0v32h32A8,8,0,0,1,176,128Z"></path>
+</svg>
+<p class="text-xs font-medium">Upload</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 w-1/4 text-primary" href="#">
+<div class="relative">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,40H40A16,16,0,0,0,24,56V200a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40ZM156,88a12,12,0,1,1-12,12A12,12,0,0,1,156,88ZM40,200V172l52-52,80,80Zm176,0H194.63l-36-36,20-20L216,181.38V200Z"></path>
+</svg>
+<span class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-16 h-8 bg-primary/20 rounded-full -z-10"></span>
+</div>
+<p class="text-xs font-medium">Gallery</p>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 w-1/4 text-zinc-500 dark:text-zinc-400" href="#">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M164.44,105.34l-48-32A8,8,0,0,0,104,80v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,129.05V95l25.58,17ZM216,40H40A16,16,0,0,0,24,56V168a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,128H40V56H216V168Zm16,40a8,8,0,0,1-8,8H32a8,8,0,0,1,0-16H224A8,8,0,0,1,232,208Z"></path>
+</svg>
+<p class="text-xs font-medium">Livestream</p>
+</a>
+</div>
+</footer>
+</div>
+
+</body></html>

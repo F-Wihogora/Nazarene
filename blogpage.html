@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Church Blog</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:wght@400;500;700;800&amp;display=swap" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1173d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Newsreader"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="flex flex-col min-h-screen">
+<div id="zzz-header"></div>
+<main class="flex-grow">
+<div class="px-4 py-4">
+<div class="relative">
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-gray-400 dark:text-gray-500">
+            search
+          </span>
+<input class="w-full pl-10 pr-4 py-3 rounded-lg bg-white/50 dark:bg-black/20 border border-gray-200 dark:border-gray-700 focus:ring-primary focus:border-primary text-gray-900 dark:text-white placeholder:text-gray-400 dark:placeholder:text-gray-500" placeholder="Search blog posts" type="text"/>
+</div>
+</div>
+<div class="px-4 pb-4">
+<h2 class="text-lg font-bold text-gray-900 dark:text-white mb-3">Categories</h2>
+<div class="flex gap-2 overflow-x-auto pb-2 -mx-4 px-4">
+<button class="px-4 py-2 text-sm font-medium rounded-full bg-primary text-white">All</button>
+<button class="px-4 py-2 text-sm font-medium rounded-full bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Faith</button>
+<button class="px-4 py-2 text-sm font-medium rounded-full bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Community</button>
+<button class="px-4 py-2 text-sm font-medium rounded-full bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300">Service</button>
+<button class="px-4 py-2 text-sm font-medium rounded-full bg-gray-200 dark:bg-gray-800 text-gray-700 dark:text-gray-300 whitespace-nowrap">Inspiration</button>
+</div>
+</div>
+<div class="px-4">
+<h2 class="text-lg font-bold text-gray-900 dark:text-white mb-3">Recent Posts</h2>
+<div class="space-y-4">
+<a class="flex items-center gap-4 group" href="blogpost.html">
+<img alt="Blog post thumbnail" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAUHk0SPHJzMEqjiFQsR0FhrkZ_ejCMyOvk7tFiCLQ-HQUyGsnqqefrqJk8zDv4HC5ZruAajo-rekIZ94MSV4I_qTqsrbxhpqEDtDviF47bFfu0D4hNlPRKy6MOVQ8U5zLEUEaJCKGwofYIKTOEY40C0ceSks_14DQB3Ek1srXDRCw5_-hWsu57Ot7Ib4vLoGxGHiDknB9bkyfhc_BYXAeGp0_de96QOsjDYQ9Pn1-kv7d0x0uCaPytA0e8XbDZFhr0jrRju_uK"/>
+<div class="flex-1">
+<h3 class="font-bold text-gray-900 dark:text-white group-hover:text-primary transition-colors">Finding Strength in Community</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">October 26, 2023</p>
+</div>
+</a>
+<a class="flex items-center gap-4 group" href="blogpost.html">
+<img alt="Blog post thumbnail" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC9A8qEdpwLOeA3j1VImwZIPIYu-H1pKlTQU7bxnHVKBSd1V9Or91KASBTN8my6QbSFI07nh8OPbbE0GKoR7k2SFNzpubuYiozrTpE7P3q5IRqHK7ih3hxts_94mDu0umogFiJOLNIUplgA740EfW4q2Rpp0fLcVkEZR1dB5WcmiWYp515LPlmIrMMaUqa-F8p5cumdBdyf1pjnZOA0eKHnPAXIIoHYJNF-1f5VwveavOorEtOxSK_1wM4WJumFbEBnvNSHrnTd"/>
+<div class="flex-1">
+<h3 class="font-bold text-gray-900 dark:text-white group-hover:text-primary transition-colors">The Power of Prayer</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">October 19, 2023</p>
+</div>
+</a>
+<a class="flex items-center gap-4 group" href="blogpost.html">
+<img alt="Blog post thumbnail" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCyF8fg8XqqbyMXPcXy74HaPlhv2BONBg552r0pOH9CecO3vI7SOoldwYG6LZNDDdUeUcJGQe-p7g81kR7CYfGFHcHMh8nkRUl6QHK5QuKCPfFhC3KHFmf7N1muCv41UvSLqp14HxflIUMQJy719NsGcz-KkQUlQ3B3u3Ks14Dg6dlmUHW2H0Z_gnxEtCpYHkiw62jyvcFflkVlgo62k5QvU9uFF38bWOW04d960DRKsp62rIE3AdZAmcdxesg3f2QrlBdp7VPU"/>
+<div class="flex-1">
+<h3 class="font-bold text-gray-900 dark:text-white group-hover:text-primary transition-colors">Serving Others with Love</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">October 12, 2023</p>
+</div>
+</a>
+<a class="flex items-center gap-4 group" href="blogpost.html">
+<img alt="Blog post thumbnail" class="w-24 h-24 object-cover rounded-lg" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAE8zy4KTi6h473yVD3pwY1XXCkssCE_9sj_zBy7y56bd9V1RI7St5kgXlNAzRolCjAdMDdlo0jaidB56lM2VZFRCuffRfvqKJsXVMMAn4INapdiUmnG_Ua3RBOZ0iFG_Ga6SEYInD-6aS1bnsF3-_UBTYqk6hx1VdrYsdMknC2UAqXR6PNT0g3qrl3OLhwAVhVAR-79w9MgoG7bbWHpNcNg41_9ZsbByh5zMlDD27NBUGtNvasK67PFIZNAkVQKEkFEOcDOHFO"/>
+<div class="flex-1">
+<h3 class="font-bold text-gray-900 dark:text-white group-hover:text-primary transition-colors">Embracing Change with Faith</h3>
+<p class="text-sm text-gray-500 dark:text-gray-400">October 5, 2023</p>
+</div>
+</a>
+</div>
+</div>
+</main>
+<div id="zzz-footer"></div>
+<script src="include-zzz.js"></script>
+</div>
+
+</body></html>

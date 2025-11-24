@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Attendance Management</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#d46211",
+            "background-light": "#f8f7f6",
+            "background-dark": "#221810",
+          },
+          fontFamily: {
+            "display": ["Newsreader"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .form-select {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23d46211' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+      background-position: right 0.5rem center;
+      background-repeat: no-repeat;
+      background-size: 1.5em 1.5em;
+      padding-right: 2.5rem;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col justify-between">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="text-stone-800 dark:text-stone-200">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-xl font-bold text-stone-900 dark:text-stone-100 pr-8">Attendance</h1>
+</div>
+</header>
+<main class="p-4">
+<div class="mb-6">
+<label class="block text-lg font-bold text-stone-900 dark:text-stone-100 mb-2" for="event-select">Select Event</label>
+<div class="relative">
+<select class="form-select w-full rounded-lg border-2 border-primary/20 bg-background-light dark:bg-background-dark text-stone-900 dark:text-stone-100 py-3 px-4 focus:border-primary focus:ring-primary/50" id="event-select">
+<option>Sunday Service - 10:00 AM</option>
+<option>Mid-week Bible Study</option>
+<option>Youth Fellowship</option>
+</select>
+</div>
+</div>
+<div>
+<h2 class="text-lg font-bold text-stone-900 dark:text-stone-100 mb-4">Members List</h2>
+<div class="space-y-2">
+<div class="flex items-center justify-between rounded-lg bg-primary/10 dark:bg-primary/20 p-3">
+<div class="flex items-center gap-4">
+<img alt="Amani" class="h-12 w-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA5HH9xgWzSJpk00XcErCzNu2997wLdspifK3lPm68xwifOsus3HtAvdi4IB3yNaWzWYlI8bDe7BNNig7ZM9Cgd5flpZptA4yNRV6-QQR5eDmEZVaebisuivZZqEaBg_79DToa0xGH2lRZQt6U3dQBFXyGdUAqbI1juI3yPGtGNrxD-9bJN5NlPctqC2p4jLDOnnFqTE9M-NI8UaGCXrCPebh-NgixXFLrtJnA_a323FlbTEgby-gu-KhAHE33wWmKQTwb451DW"/>
+<div>
+<p class="font-semibold text-stone-900 dark:text-stone-100">Amani</p>
+<p class="text-sm text-stone-600 dark:text-stone-400">Member</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center rounded-full bg-primary/20 dark:bg-primary/30 p-2 text-primary">
+<span class="material-symbols-outlined">check</span>
+</button>
+<button class="flex items-center justify-center rounded-full bg-stone-200 dark:bg-stone-700 p-2 text-stone-600 dark:text-stone-300">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between rounded-lg bg-background-light dark:bg-background-dark p-3">
+<div class="flex items-center gap-4">
+<img alt="Umutoni" class="h-12 w-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBw_meAGE40N4BFGYToICykkUR7cfcf6bzPHgAH51y7XbpOZYxHQAVg8KKemoPEcPJ0o8CwHo4rQwYefjTPmOflPadNzIKQEh_ZOi2b88dnpilo8B16PH-5X1EKn6nsRzDVJNheAqobIRWNt__kpxrVTocC7P0rOHAdbihNx-P8E77ySOtR6pm1DgaDIdd99UyEi9UrlbP8im7sXyQvFLyYhSRAKTp_VQXYFm1lQfmJEeUL1mx896Xg7Hbfc6BW54DtY8L85aqu"/>
+<div>
+<p class="font-semibold text-stone-900 dark:text-stone-100">Umutoni</p>
+<p class="text-sm text-stone-600 dark:text-stone-400">Member</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center rounded-full bg-stone-200 dark:bg-stone-700 p-2 text-stone-600 dark:text-stone-300">
+<span class="material-symbols-outlined">check</span>
+</button>
+<button class="flex items-center justify-center rounded-full bg-stone-200 dark:bg-stone-700 p-2 text-stone-600 dark:text-stone-300">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between rounded-lg bg-background-light dark:bg-background-dark p-3">
+<div class="flex items-center gap-4">
+<img alt="Niyonkuru" class="h-12 w-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCb1cVOO0Z-agP1zggoi64pPsPruWWsC-wFLdMqvYmAmTFiGG0fHYJhEFvATWomVbg2GhzK2QlTMyYK2zHzVNB6XTTKQ7YtMz8i7COKBpiw81amcwuqnGMkZKxfsgxSlgkL7_qh5oo9gu8bo7q7fX6u28p_23Iq282KlmXNiAolavAP0vRJcycjBSy_FnAmZYHZTLx43Y2Hvi48UyZRnzhu8CG-tFWfRxWvsT5pMbtLxqjZK82CIriu2uRAnTp7JIJhKFUg5NxO"/>
+<div>
+<p class="font-semibold text-stone-900 dark:text-stone-100">Niyonkuru</p>
+<p class="text-sm text-stone-600 dark:text-stone-400">Member</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center rounded-full bg-stone-200 dark:bg-stone-700 p-2 text-stone-600 dark:text-stone-300">
+<span class="material-symbols-outlined">check</span>
+</button>
+<button class="flex items-center justify-center rounded-full bg-stone-200 dark:bg-stone-700 p-2 text-stone-600 dark:text-stone-300">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between rounded-lg bg-primary/10 dark:bg-primary/20 p-3">
+<div class="flex items-center gap-4">
+<img alt="Uwase" class="h-12 w-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCRjh_nXL-FoOf_EnAjzthde4X4HzJUjzqIu0Fygt5jETvR_vfvsjib5iYsXiStcOWBg8lpw5ATu2QLDCxlJYUIXpHk987_MBYysYwSRQjkKi_Z92NObDuJCxj1TJF60zAkQAFNNDm3cc4pxFkVgtVS2A9CC5wQsT2oFttty7-TJcQdDUWg_ANOszchGZpGsfAHaVEB7cK0LL924rGj5KnrMqdycLWUXgS0CwYIzC0-8cBMiOsRjDQqhWaqDXnBN02i_ivtrWaB"/>
+<div>
+<p class="font-semibold text-stone-900 dark:text-stone-100">Uwase</p>
+<p class="text-sm text-stone-600 dark:text-stone-400">Member</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center rounded-full bg-primary/20 dark:bg-primary/30 p-2 text-primary">
+<span class="material-symbols-outlined">check</span>
+</button>
+<button class="flex items-center justify-center rounded-full bg-stone-200 dark:bg-stone-700 p-2 text-stone-600 dark:text-stone-300">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+</div>
+<div class="flex items-center justify-between rounded-lg bg-background-light dark:bg-background-dark p-3">
+<div class="flex items-center gap-4">
+<img alt="Mugisha" class="h-12 w-12 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBnOEU2DwI8eujX3H9cCqBam7PK4gg-eOLw4LwXPYmUWo9MwntmBTTz3Xhv0GZ1cDo3Jmomnpx3sdSSxEbvaGbPkQwgV4g8YCu68uvve9TGpYPghZrkOl1Lq8Nc53RGlF6aQ6q9MOmqmvAfqll98L7Ryr19O640-ANvyFLKse8k8Cr1DS1zAcvfDx7uMaJkEkYuileVJrdGByBOqngRuXGvTOeQWfcN98Fnfz_VQ2-U2bL99JPYyOTXmjy-KKrKvXgC3AVuh1Nk"/>
+<div>
+<p class="font-semibold text-stone-900 dark:text-stone-100">Mugisha</p>
+<p class="text-sm text-stone-600 dark:text-stone-400">Member</p>
+</div>
+</div>
+<div class="flex items-center gap-2">
+<button class="flex items-center justify-center rounded-full bg-stone-200 dark:bg-stone-700 p-2 text-stone-600 dark:text-stone-300">
+<span class="material-symbols-outlined">check</span>
+</button>
+<button class="flex items-center justify-center rounded-full bg-stone-200 dark:bg-stone-700 p-2 text-stone-600 dark:text-stone-300">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm p-4">
+<div class="flex gap-4">
+<button class="flex-1 rounded-lg border border-primary/50 py-3 text-center font-bold text-primary dark:text-primary">
+          Cancel
+        </button>
+<button class="flex-1 rounded-lg bg-primary py-3 text-center font-bold text-white">
+          Save Attendance
+        </button>
+</div>
+</footer>
+</div>
+
+</body></html>

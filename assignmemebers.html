@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Assign Members to Songs</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#d46211",
+            "background-light": "#f8f7f6",
+            "background-dark": "#221810",
+            "text-light": "#1b130d",
+            "text-dark": "#f8f7f6",
+            "text-muted-light": "#9a6c4c",
+            "text-muted-dark": "#a8a29e",
+            "surface-light": "#f3ece7",
+            "surface-dark": "#3f3227"
+          },
+          fontFamily: {
+            "display": ["Newsreader", "serif"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings:
+      'FILL' 1,
+      'wght' 400,
+      'GRAD' 0,
+      'opsz' 24
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="relative flex min-h-screen w-full flex-col justify-between">
+<div>
+<header class="sticky top-0 z-10 flex items-center bg-background-light/80 p-4 pb-2 backdrop-blur-sm dark:bg-background-dark/80">
+<button class="flex size-10 shrink-0 items-center justify-center rounded-full text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined text-3xl">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-xl font-bold tracking-tight pr-10">Assign Members</h1>
+</header>
+<main class="p-4">
+<section class="mb-8">
+<h2 class="mb-4 text-2xl font-bold tracking-tight">Songs</h2>
+<div class="space-y-2">
+<div class="flex cursor-pointer items-center gap-4 rounded-lg bg-primary/10 p-3 transition-colors hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-surface-light dark:bg-surface-dark">
+<span class="material-symbols-outlined text-3xl text-text-light dark:text-text-dark">music_note</span>
+</div>
+<div class="flex-1">
+<p class="font-semibold">Amazing Grace</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Rehearsal</p>
+</div>
+<input class="h-6 w-6 rounded-md border-text-muted-light bg-transparent text-primary focus:ring-primary focus:ring-offset-background-light dark:border-text-muted-dark dark:focus:ring-offset-background-dark" type="checkbox"/>
+</div>
+<div class="flex cursor-pointer items-center gap-4 rounded-lg bg-surface-light p-3 transition-colors hover:bg-primary/10 dark:bg-surface-dark dark:hover:bg-primary/20">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-background-light dark:bg-background-dark">
+<span class="material-symbols-outlined text-3xl text-text-light dark:text-text-dark">music_note</span>
+</div>
+<div class="flex-1">
+<p class="font-semibold">Holy, Holy, Holy</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Performance</p>
+</div>
+<input class="h-6 w-6 rounded-md border-text-muted-light bg-transparent text-primary focus:ring-primary focus:ring-offset-background-light dark:border-text-muted-dark dark:focus:ring-offset-background-dark" type="checkbox"/>
+</div>
+<div class="flex cursor-pointer items-center gap-4 rounded-lg bg-surface-light p-3 transition-colors hover:bg-primary/10 dark:bg-surface-dark dark:hover:bg-primary/20">
+<div class="flex size-12 shrink-0 items-center justify-center rounded-lg bg-background-light dark:bg-background-dark">
+<span class="material-symbols-outlined text-3xl text-text-light dark:text-text-dark">music_note</span>
+</div>
+<div class="flex-1">
+<p class="font-semibold">How Great Thou Art</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Rehearsal</p>
+</div>
+<input class="h-6 w-6 rounded-md border-text-muted-light bg-transparent text-primary focus:ring-primary focus:ring-offset-background-light dark:border-text-muted-dark dark:focus:ring-offset-background-dark" type="checkbox"/>
+</div>
+</div>
+</section>
+<section>
+<h2 class="mb-4 text-2xl font-bold tracking-tight">Choir Members</h2>
+<div class="space-y-2">
+<div class="flex cursor-pointer items-center gap-4 rounded-lg bg-primary/10 p-3 transition-colors hover:bg-primary/20 dark:bg-primary/20 dark:hover:bg-primary/30">
+<img alt="Sarah Niyonsaba" class="h-10 w-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBQMpL4jZybI7lC_hvwfbA7H7UuCxjEGYK1DkY5SQ29HNNtRpVTOgGFm3sL2CGigBm8-tA1YDg0Qvkzji--EqPZ5Y8b6j4wXLSuwEJ8LckTPuJlZaN7HuvNW1JlHUSmF4LnD7AiqPpfTc3mr94ZYLuQZC-4pvMWW7JLhgwQ8jC2fxAAP7GD58zzm8aUIVIGFvzo6W5c0XSUqi7-WjCqhh0vY-twXLj3-Qd3U02YQQdKeUPbgEeZLM-SRrLAmsmlHy04G10oZa9N"/>
+<p class="flex-1 font-medium">Sarah Niyonsaba</p>
+<input class="h-6 w-6 rounded-md border-text-muted-light bg-transparent text-primary focus:ring-primary focus:ring-offset-background-light dark:border-text-muted-dark dark:focus:ring-offset-background-dark" type="checkbox"/>
+</div>
+<div class="flex cursor-pointer items-center gap-4 rounded-lg bg-surface-light p-3 transition-colors hover:bg-primary/10 dark:bg-surface-dark dark:hover:bg-primary/20">
+<img alt="David Niyonzima" class="h-10 w-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBoDT7fcHGMNyYrCcfuZG9EgDAhggHg3A7SM6leEZUoXifMtULNfkB6cb5KT24MdKiarObv4XJWUgPpJnSjzyXLg6-APD_Cm7EEbG1MPqdkAQSI4R5vn_5Yigl5Zj9y1DQyWPGeE81IpVRcykx4fHh_GFmVNk51QeMTmFx4678NRkWfjNJFnC_rFjVp4rY1ObcWSOXZ5WZo3laq-K2cQTfAi-IgkhvFMVhCXErxAn4pfNo3SagwLMl5HCGH2Bbr_ARD9Xr8KNZW"/>
+<p class="flex-1 font-medium">David Niyonzima</p>
+<input class="h-6 w-6 rounded-md border-text-muted-light bg-transparent text-primary focus:ring-primary focus:ring-offset-background-light dark:border-text-muted-dark dark:focus:ring-offset-background-dark" type="checkbox"/>
+</div>
+<div class="flex cursor-pointer items-center gap-4 rounded-lg bg-surface-light p-3 transition-colors hover:bg-primary/10 dark:bg-surface-dark dark:hover:bg-primary/20">
+<img alt="Esther Uwamahoro" class="h-10 w-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuBk88uc0EztJFRY5rhSk7JZSaS-nBFXkQmTJiNqsNNaecD9hU_8nxPv5VtEWKG4gJZmpp0hbqjiCWeDyepu9AGG8Ec08JFM_W6LKVrzMtw8ilVB8iTLJx0bknvinQbSf2KPbODRCPhd18fgt_JF7_UC06tMueQ7DRMfcchZGPC4gM92U7GcPTqdI_lTVb3xNLAfLXFMsLeovaM8UvTyiFayrVppLII9xVdZbg_nqU0rwojeN7J0W2SFbXQsbXJWtd2k91KVF1JJ"/>
+<p class="flex-1 font-medium">Esther Uwamahoro</p>
+<input class="h-6 w-6 rounded-md border-text-muted-light bg-transparent text-primary focus:ring-primary focus:ring-offset-background-light dark:border-text-muted-dark dark:focus:ring-offset-background-dark" type="checkbox"/>
+</div>
+<div class="flex cursor-pointer items-center gap-4 rounded-lg bg-surface-light p-3 transition-colors hover:bg-primary/10 dark:bg-surface-dark dark:hover:bg-primary/20">
+<img alt="Samuel Niyitegeka" class="h-10 w-10 rounded-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuB-pYEHSSX-UrrryRl3UxoNK1pCEbc13aAX9j3zNrHeUJqz3zOCtMe2lv2ZlFaBMavde0l5QS4-Pg-NKOtWOYbP2rRfkgyKeYZvFkDbRZaVbg10FE6NQpNZYS0hFfukjtwoCXuTHER2D4qIIcPrKH-tu13Hyg_3p--VxnrtaZZD657cSXw4eAVzCi71mfD1B5s_KLMzNSU3npicBCtZ22M-FpgE9gfcngpS10lMpe0ckVwDXMBvtRgOdHlyVM7Pj1AicE-mheq8"/>
+<p class="flex-1 font-medium">Samuel Niyitegeka</p>
+<input class="h-6 w-6 rounded-md border-text-muted-light bg-transparent text-primary focus:ring-primary focus:ring-offset-background-light dark:border-text-muted-dark dark:focus:ring-offset-background-dark" type="checkbox"/>
+</div>
+</div>
+</section>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-background-light/80 px-4 py-3 backdrop-blur-sm dark:bg-background-dark/80">
+<button class="flex h-12 w-full items-center justify-center rounded-xl bg-primary text-white shadow-lg transition-transform active:scale-95">
+<span class="text-base font-bold tracking-wide">Assign Selected</span>
+</button>
+</footer>
+</div>
+
+</body></html>

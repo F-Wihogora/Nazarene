@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#8B5CF6", // A warmer purple
+                        "primary-dark": "#7C3AED",
+                        "background-light": "#FDFBF8", // A warmer off-white
+                        "background-dark": "#1C1917", // A warmer dark gray
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#292524",
+                        "text-light": "#1C1917",
+                        "text-dark": "#E7E5E4",
+                        "subtle-light": "#A8A29E",
+                        "subtle-dark": "#57534E",
+                        "border-light": "#E7E5E4",
+                        "border-dark": "#44403C",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        lg: "0.75rem",
+                        xl: "1rem",
+                        full: "9999px",
+                    },
+                },
+            },
+        };
+    </script>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="flex flex-col h-screen justify-between">
+<main class="flex-grow overflow-y-auto">
+<div id="zzz-header"></div>
+<div class="p-4 space-y-8">
+<div>
+<h2 class="text-lg font-semibold mb-4 text-text-light dark:text-text-dark">
+                        Find Us
+                    </h2>
+<div class="rounded-xl overflow-hidden border border-border-light dark:border-border-dark">
+<img alt="Map showing the location of Nazarene Remera Church" class="w-full h-48 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCJgSQlcbqkmRNLUE3wEEjNYadr2R1Ntj49HmLH4TqzHW4lybh5SmLDYxTFrGmtzEASKEJ8l6jy6MIn2ndMC_gvUygSNwKWOwLfNDPg20vj2gNroLnLiIJEmShgIvTCQyyHt-wEWHAMAkIZxoQYIe8tXj3hcL393VcJYt6nHH_7VDjJJ4PCqJdNnGChUS934yzlIC0e9rZL6HsSjWrvpR3VXcVMJPonm8hIQyUU0e-ZYYAzQX4VCHcJLN71XsUsP_EnWnOxbKeT"/>
+</div>
+</div>
+<div>
+<h2 class="text-lg font-semibold mb-4 text-text-light dark:text-text-dark">
+                        Send us a Message
+                    </h2>
+<form class="space-y-4">
+<div>
+<label class="block text-sm font-medium text-subtle-light dark:text-subtle-dark mb-1" for="name">Name</label>
+<input class="w-full px-4 py-3 rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark focus:ring-primary focus:border-primary text-text-light dark:text-text-dark placeholder-subtle-light dark:placeholder-subtle-dark" id="name" name="name" placeholder="John Doe" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-subtle-light dark:text-subtle-dark mb-1" for="email">Email</label>
+<input class="w-full px-4 py-3 rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark focus:ring-primary focus:border-primary text-text-light dark:text-text-dark placeholder-subtle-light dark:placeholder-subtle-dark" id="email" name="email" placeholder="you@example.com" type="email"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-subtle-light dark:text-subtle-dark mb-1" for="message">Message</label>
+<textarea class="w-full px-4 py-3 rounded-lg border border-border-light dark:border-border-dark bg-card-light dark:bg-card-dark focus:ring-primary focus:border-primary text-text-light dark:text-text-dark placeholder-subtle-light dark:placeholder-subtle-dark" id="message" name="message" placeholder="Your message here..." rows="4"></textarea>
+</div>
+<button class="w-full bg-primary text-white font-bold py-3 rounded-lg text-lg hover:bg-primary-dark transition-colors" type="submit">
+              Send Message
+            </button>
+</form>
+</div>
+<div>
+<a class="flex items-center justify-center gap-3 w-full bg-[#25D366] text-white font-bold py-3 rounded-lg text-lg hover:bg-[#128C7E] transition-colors" href="#">
+<svg class="h-6 w-6" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+<path d="M.057 24l1.687-6.163c-1.041-1.804-1.588-3.849-1.587-5.946.003-6.556 5.338-11.891 11.893-11.891 3.181.001 6.167 1.24 8.413 3.488 2.245 2.248 3.481 5.236 3.48 8.414-.003 6.557-5.338 11.892-11.894 11.892-1.99-.001-3.951-.5-5.688-1.448l-6.305 1.654zm6.597-3.807c1.676.995 3.276 1.591 5.392 1.592 5.448 0 9.886-4.434 9.889-9.885.002-5.462-4.415-9.89-9.881-9.892-5.452 0-9.887 4.434-9.889 9.886-.001 2.269.655 4.398 1.919 6.335l.001.002zM15.426 15.22l-.123.07-1.529.831-.223.123c-.566.309-1.221.312-1.785.011l-.11-.059-2.738-1.611a5.167 5.167 0 01-2.28-2.673l-.096-.188-.048-.11c-.139-.311-.184-.66-.123-.998l.053-.268.225-.944.11-.461.272-.272c.21-.21.488-.34.785-.34l.434.004c.205 0 .393.084.53.231l.387.457c.164.193.208.468.12.71l-.053.155c-.067.193-.194.363-.357.46l-.25.15c-.21.124-.303.383-.223.606l.034.096c.267.587.643 1.097 1.134 1.501l.112.094c.48.383.978.68 1.516.865l.123.041c.21.054.445-.015.613-.15l.135-.108c.175-.143.402-.203.613-.136l.205.067.938.293.435.135c.273.084.48.297.53.587l.024.167c.026.175-.023.353-.136.489l-.21.24z"></path>
+</svg>
+                        Chat on WhatsApp
+                    </a>
+</div>
+</div>
+</main>
+<div id="zzz-footer"></div>
+<script src="include-zzz.js"></script>
+</div>
+
+</body></html>

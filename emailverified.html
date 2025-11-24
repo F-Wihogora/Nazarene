@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#A0522D",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-white">
+<div class="relative flex min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<main class="flex-grow flex flex-col justify-center p-4">
+<div class="flex flex-col items-center text-center">
+<div class="w-24 h-24 rounded-full bg-green-100 dark:bg-green-900 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-green-500 dark:text-green-400 text-5xl">check_circle</span>
+</div>
+<h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200">Email Verified!</h1>
+<p class="text-gray-600 dark:text-gray-400 mt-2 max-w-sm">Your email address has been successfully verified. Please wait for an administrator to approve your account and assign a role.</p>
+<div class="mt-8 w-full">
+<button class="w-full rounded-full bg-primary text-white py-3 font-bold" type="button">Back to Login</button>
+</div>
+</div>
+<div class="flex flex-col items-center text-center mt-16">
+<div class="w-24 h-24 rounded-full bg-red-100 dark:bg-red-900 flex items-center justify-center mb-6">
+<span class="material-symbols-outlined text-red-500 dark:text-red-400 text-5xl">error</span>
+</div>
+<h1 class="text-3xl font-bold text-gray-800 dark:text-gray-200">Verification Failed</h1>
+<p class="text-gray-600 dark:text-gray-400 mt-2 max-w-sm">The verification link is invalid or has expired. Please try again or contact support.</p>
+<div class="mt-8 w-full space-y-4">
+<button class="w-full rounded-full bg-primary text-white py-3 font-bold" type="button">Resend Verification Email</button>
+<button class="w-full rounded-full border border-primary text-primary dark:text-white dark:border-white py-3 font-bold" type="button">Contact Support</button>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>

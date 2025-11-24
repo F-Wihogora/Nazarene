@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>User Management - Nazarene Remera Church</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#d46211",
+                        "background-light": "#f8f7f6",
+                        "background-dark": "#221810",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader", "serif"],
+                        "sans": ["Noto Sans", "sans-serif"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-sans text-stone-900 dark:text-stone-100">
+<div class="flex flex-col min-h-screen">
+<header class="flex items-center p-4 border-b border-stone-200 dark:border-stone-700">
+<button class="text-stone-900 dark:text-stone-100">
+<svg fill="currentColor" height="24" viewBox="0 0 256 256" width="24" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H59.31l58.35,58.34a8,8,0,0,1-11.32,11.32l-72-72a8,8,0,0,1,0-11.32l72-72a8,8,0,0,1,11.32,11.32L59.31,120H216A8,8,0,0,1,224,128Z"></path>
+</svg>
+</button>
+<h1 class="flex-1 text-center text-xl font-bold font-display pr-6">User Management</h1>
+</header>
+<main class="flex-grow p-4 sm:px-6 lg:px-8">
+<div class="space-y-8">
+<div>
+<h2 class="text-lg font-display font-bold text-stone-800 dark:text-stone-200 mb-4">Pending Approvals</h2>
+<div class="space-y-4">
+<div class="bg-white dark:bg-background-dark/50 rounded-lg p-4 flex items-center justify-between">
+<div>
+<p class="font-semibold">John Doe</p>
+<p class="text-sm text-stone-600 dark:text-stone-400">john.doe@example.com</p>
+</div>
+<div class="flex items-center space-x-2">
+<button class="p-2 bg-green-500 text-white rounded-full hover:bg-green-600">
+<span class="material-symbols-outlined">check</span>
+</button>
+<button class="p-2 bg-red-500 text-white rounded-full hover:bg-red-600">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark/50 rounded-lg p-4 flex items-center justify-between">
+<div>
+<p class="font-semibold">Jane Smith</p>
+<p class="text-sm text-stone-600 dark:text-stone-400">jane.smith@example.com</p>
+</div>
+<div class="flex items-center space-x-2">
+<button class="p-2 bg-green-500 text-white rounded-full hover:bg-green-600">
+<span class="material-symbols-outlined">check</span>
+</button>
+<button class="p-2 bg-red-500 text-white rounded-full hover:bg-red-600">
+<span class="material-symbols-outlined">close</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+<div>
+<h2 class="text-lg font-display font-bold text-stone-800 dark:text-stone-200 mb-4">All Users</h2>
+<div class="relative mb-4">
+<input class="form-input block w-full rounded-lg border-transparent bg-background-light/50 dark:bg-background-dark/50 focus:ring-primary focus:border-primary placeholder-stone-500 dark:placeholder-stone-400 p-4 pl-10" placeholder="Search users..." type="text"/>
+<span class="material-symbols-outlined absolute left-3 top-1/2 -translate-y-1/2 text-stone-400">search</span>
+</div>
+<div class="space-y-4">
+<div class="bg-white dark:bg-background-dark/50 rounded-lg p-4">
+<div class="flex items-center justify-between">
+<div>
+<p class="font-semibold">Alice Williams</p>
+<p class="text-sm text-stone-600 dark:text-stone-400">alice.w@example.com</p>
+</div>
+<div class="flex items-center space-x-2">
+<button class="p-2 text-stone-600 dark:text-stone-300 hover:text-primary">
+<span class="material-symbols-outlined">edit</span>
+</button>
+<button class="p-2 text-stone-600 dark:text-stone-300 hover:text-red-500">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</div>
+<div class="mt-4">
+<label class="sr-only" for="role-alice">Role</label>
+<select class="form-select block w-full rounded-lg border-transparent bg-background-light/50 dark:bg-background-dark/50 focus:ring-primary focus:border-primary" id="role-alice" name="role">
+<option>Member</option>
+<option selected="">Admin</option>
+<option>Pastor</option>
+<option>Finance</option>
+</select>
+</div>
+</div>
+<div class="bg-white dark:bg-background-dark/50 rounded-lg p-4">
+<div class="flex items-center justify-between">
+<div>
+<p class="font-semibold">Bob Brown</p>
+<p class="text-sm text-stone-600 dark:text-stone-400">bob.b@example.com</p>
+</div>
+<div class="flex items-center space-x-2">
+<button class="p-2 text-stone-600 dark:text-stone-300 hover:text-primary">
+<span class="material-symbols-outlined">edit</span>
+</button>
+<button class="p-2 text-stone-600 dark:text-stone-300 hover:text-red-500">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</div>
+<div class="mt-4">
+<label class="sr-only" for="role-bob">Role</label>
+<select class="form-select block w-full rounded-lg border-transparent bg-background-light/50 dark:bg-background-dark/50 focus:ring-primary focus:border-primary" id="role-bob" name="role">
+<option selected="">Member</option>
+<option>Admin</option>
+<option>Pastor</option>
+<option>Finance</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="mt-auto">
+<div class="w-full h-32 bg-primary/10"></div>
+</footer>
+</div>
+
+</body></html>

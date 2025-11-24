@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html class="dark" lang="en"><head>
+<meta charset="utf-8"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Manrope:wght@400;500;700;800" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#d46211",
+            "background-light": "#f8f7f6",
+            "background-dark": "#221810",
+          },
+          fontFamily: {
+            "display": ["Manrope"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-800 dark:text-gray-200">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div>
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="flex h-10 w-10 items-center justify-center rounded-full text-gray-600 dark:text-gray-300">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-lg font-bold text-gray-900 dark:text-white pr-10">Financial Trends</h1>
+</div>
+<nav class="border-b border-gray-200 dark:border-gray-700/50">
+<div class="flex justify-around">
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent px-4 py-3 text-sm font-medium text-gray-500 dark:text-gray-400" href="#">
+              Overview
+            </a>
+<a class="flex flex-col items-center justify-center border-b-2 border-primary px-4 py-3 text-sm font-bold text-primary" href="#">
+              Trends
+            </a>
+<a class="flex flex-col items-center justify-center border-b-2 border-transparent px-4 py-3 text-sm font-medium text-gray-500 dark:text-gray-400" href="#">
+              Reports
+            </a>
+</div>
+</nav>
+</header>
+<main class="p-4 space-y-8">
+<section>
+<div class="flex justify-between items-center mb-4">
+<h2 class="text-xl font-bold text-gray-900 dark:text-white">Offering Trends</h2>
+<button class="text-primary text-sm font-medium">View All</button>
+</div>
+<div class="rounded-xl border border-gray-200 dark:border-gray-700/50 bg-white/5 dark:bg-black/10 p-4">
+<div class="flex items-start justify-between">
+<div>
+<p class="text-sm text-gray-600 dark:text-gray-400">Total Offerings</p>
+<p class="text-3xl font-bold text-gray-900 dark:text-white">$25,000</p>
+</div>
+<div class="flex items-center gap-1 text-sm font-medium text-green-500">
+<span class="material-symbols-outlined text-base">arrow_upward</span>
+<span>+15%</span>
+</div>
+</div>
+<p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Last 12 Months</p>
+<div class="mt-4 h-40">
+<svg fill="none" height="100%" preserveAspectRatio="none" viewBox="0 0 472 150" width="100%" xmlns="http://www.w3.org/2000/svg">
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25V149H0V109Z" fill="url(#paint0_linear_chart)"></path>
+<path d="M0 109C18.1538 109 18.1538 21 36.3077 21C54.4615 21 54.4615 41 72.6154 41C90.7692 41 90.7692 93 108.923 93C127.077 93 127.077 33 145.231 33C163.385 33 163.385 101 181.538 101C199.692 101 199.692 61 217.846 61C236 61 236 45 254.154 45C272.308 45 272.308 121 290.462 121C308.615 121 308.615 149 326.769 149C344.923 149 344.923 1 363.077 1C381.231 1 381.231 81 399.385 81C417.538 81 417.538 129 435.692 129C453.846 129 453.846 25 472 25" stroke="#d46211" stroke-linecap="round" stroke-width="3"></path>
+<defs>
+<linearGradient gradientUnits="userSpaceOnUse" id="paint0_linear_chart" x1="236" x2="236" y1="1" y2="149">
+<stop stop-color="#d46211" stop-opacity="0.2"></stop>
+<stop offset="1" stop-color="#d46211" stop-opacity="0"></stop>
+</linearGradient>
+</defs>
+</svg>
+</div>
+<div class="flex justify-around text-xs font-medium text-gray-500 dark:text-gray-400 mt-2">
+<p>Jan</p><p>Feb</p><p>Mar</p><p>Apr</p><p>May</p><p>Jun</p><p>Jul</p>
+</div>
+</div>
+</section>
+<section>
+<div class="flex justify-between items-center mb-4">
+<h2 class="text-xl font-bold text-gray-900 dark:text-white">Expenditure Analysis</h2>
+<button class="text-primary text-sm font-medium">View All</button>
+</div>
+<div class="rounded-xl border border-gray-200 dark:border-gray-700/50 bg-white/5 dark:bg-black/10 p-4">
+<div class="flex items-start justify-between">
+<div>
+<p class="text-sm text-gray-600 dark:text-gray-400">Total Expenses</p>
+<p class="text-3xl font-bold text-gray-900 dark:text-white">$18,000</p>
+</div>
+<div class="flex items-center gap-1 text-sm font-medium text-red-500">
+<span class="material-symbols-outlined text-base">arrow_downward</span>
+<span>-8%</span>
+</div>
+</div>
+<p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Last 12 Months</p>
+<div class="grid grid-cols-4 gap-4 items-end h-40 mt-4 px-2">
+<div class="flex flex-col items-center gap-2">
+<div class="w-full bg-primary/20 dark:bg-primary/30 rounded-t" style="height: 75%;"></div>
+<p class="text-xs font-medium text-gray-500 dark:text-gray-400">Ministry</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full bg-primary/20 dark:bg-primary/30 rounded-t" style="height: 40%;"></div>
+<p class="text-xs font-medium text-gray-500 dark:text-gray-400">Operations</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full bg-primary/20 dark:bg-primary/30 rounded-t" style="height: 20%;"></div>
+<p class="text-xs font-medium text-gray-500 dark:text-gray-400">Outreach</p>
+</div>
+<div class="flex flex-col items-center gap-2">
+<div class="w-full bg-primary/20 dark:bg-primary/30 rounded-t" style="height: 60%;"></div>
+<p class="text-xs font-medium text-gray-500 dark:text-gray-400">Admin</p>
+</div>
+</div>
+</div>
+</section>
+<section>
+<div class="flex justify-between items-center mb-4">
+<h2 class="text-xl font-bold text-gray-900 dark:text-white">Budget Comparison</h2>
+<button class="text-primary text-sm font-medium">View All</button>
+</div>
+<div class="rounded-xl border border-gray-200 dark:border-gray-700/50 bg-white/5 dark:bg-black/10 p-4">
+<div class="flex items-start justify-between">
+<div>
+<p class="text-sm text-gray-600 dark:text-gray-400">Budget vs. Actual</p>
+<p class="text-3xl font-bold text-gray-900 dark:text-white">$20,000</p>
+</div>
+<div class="flex items-center gap-1 text-sm font-medium text-green-500">
+<span class="material-symbols-outlined text-base">arrow_upward</span>
+<span>+5%</span>
+</div>
+</div>
+<p class="text-xs text-gray-500 dark:text-gray-400 mt-1">Current Year</p>
+<div class="space-y-4 mt-6">
+<div>
+<div class="flex justify-between items-center text-sm mb-1">
+<p class="font-medium text-gray-600 dark:text-gray-400">Budget</p>
+<p class="font-bold text-gray-800 dark:text-gray-200">$19,047</p>
+</div>
+<div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+<div class="bg-primary/40 h-2.5 rounded-full" style="width: 85%"></div>
+</div>
+</div>
+<div>
+<div class="flex justify-between items-center text-sm mb-1">
+<p class="font-medium text-gray-600 dark:text-gray-400">Actual</p>
+<p class="font-bold text-gray-800 dark:text-gray-200">$20,000</p>
+</div>
+<div class="w-full bg-gray-200 dark:bg-gray-700 rounded-full h-2.5">
+<div class="bg-primary h-2.5 rounded-full" style="width: 90%"></div>
+</div>
+</div>
+</div>
+</div>
+</section>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm border-t border-gray-200 dark:border-gray-700/50 pb-safe">
+<div class="flex justify-around p-2">
+<a class="flex flex-col items-center justify-center gap-1 p-2 rounded-lg text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 p-2 rounded-lg text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">bar_chart_4_bars</span>
+<span class="text-xs font-medium">Reports</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 p-2 rounded-lg text-primary" href="#">
+<span class="material-symbols-outlined">show_chart</span>
+<span class="text-xs font-bold">Trends</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 p-2 rounded-lg text-gray-500 dark:text-gray-400" href="#">
+<span class="material-symbols-outlined">campaign</span>
+<span class="text-xs font-medium">Feedback</span>
+</a>
+</div>
+</footer>
+</div>
+
+</body></html>

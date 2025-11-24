@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1173d4",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 bg-background-light dark:bg-background-dark px-4 pt-6 pb-4">
+<div class="relative">
+<input class="w-full rounded-full border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 h-12 pl-12 pr-4 text-gray-900 dark:text-white placeholder-gray-500 dark:placeholder-gray-400" placeholder="Search sermons..." type="text"/>
+<div class="absolute inset-y-0 left-0 flex items-center pl-4">
+<span class="material-symbols-outlined text-gray-500 dark:text-gray-400">search</span>
+</div>
+</div>
+<div class="flex items-center gap-2 mt-3">
+<button class="flex items-center gap-2 rounded-full border border-gray-300 dark:border-gray-700 px-4 py-2 text-sm text-gray-700 dark:text-gray-300">
+<span>Filter</span>
+<span class="material-symbols-outlined text-base">filter_list</span>
+</button>
+<button class="flex items-center gap-2 rounded-full border border-gray-300 dark:border-gray-700 px-4 py-2 text-sm text-gray-700 dark:text-gray-300">
+<span>Sort by: Relevance</span>
+<span class="material-symbols-outlined text-base">arrow_drop_down</span>
+</button>
+</div>
+</header>
+<main class="p-4">
+<div class="flex flex-col gap-4">
+<div class="rounded-lg bg-white dark:bg-gray-800 p-4 shadow-sm">
+<h3 class="font-bold text-lg text-gray-800 dark:text-white">Living a Life of Purpose</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400">Pastor John Doe | May 26, 2024</p>
+<p class="text-sm text-primary mt-1">Category: Faith</p>
+</div>
+<div class="rounded-lg bg-white dark:bg-gray-800 p-4 shadow-sm">
+<h3 class="font-bold text-lg text-gray-800 dark:text-white">The Power of Forgiveness</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400">Pastor Jane Smith | May 19, 2024</p>
+<p class="text-sm text-primary mt-1">Category: Grace</p>
+</div>
+<div class="rounded-lg bg-white dark:bg-gray-800 p-4 shadow-sm">
+<h3 class="font-bold text-lg text-gray-800 dark:text-white">Finding Joy in Service</h3>
+<p class="text-sm text-gray-600 dark:text-gray-400">Guest Speaker | May 12, 2024</p>
+<p class="text-sm text-primary mt-1">Category: Community</p>
+</div>
+</div>
+</main>
+</div>
+<div class="sticky bottom-0">
+<div class="flex gap-2 border-t border-gray-200 dark:border-gray-800 bg-background-light dark:bg-background-dark px-4 pb-3 pt-2">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-gray-500 dark:text-gray-400" href="#">
+<div class="flex h-8 items-center justify-center">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,115.55V208a16,16,0,0,1-16,16H168a16,16,0,0,1-16-16V168a8,8,0,0,0-8-8H112a8,8,0,0,0-8,8v40a16,16,0,0,1-16,16H48a16,16,0,0,1-16-16V115.55a16,16,0,0,1,5.17-11.78l80-75.48.11-.11a16,16,0,0,1,21.53,0,1.14,1.14,0,0,0,.11.11l80,75.48A16,16,0,0,1,224,115.55Z"></path>
+</svg>
+</div>
+<p class="text-xs font-medium">Dashboard</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<div class="flex h-8 items-center justify-center">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M230.92,212c-15.23-26.33-38.7-45.21-66.09-54.16a72,72,0,1,0-73.66,0C63.78,166.78,40.31,185.66,25.08,212a8,8,0,1,0,13.85,8c18.84-32.56,52.14-52,89.07-52s70.23,19.44,89.07,52a8,8,0,1,0,13.85-8ZM72,96a56,56,0,1,1,56,56A56.06,56.06,0,0,1,72,96Z"></path>
+</svg>
+</div>
+<p class="text-xs font-medium">My Profile</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<div class="flex h-8 items-center justify-center">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Z"></path>
+</svg>
+</div>
+<p class="text-xs font-medium">Events</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-primary" href="#">
+<div class="flex h-8 items-center justify-center">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M216,40H40A16,16,0,0,0,24,56V168a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A16,16,0,0,0,216,40Zm0,128H40V56H216V168Zm16,40a8,8,0,0,1-8,8H32a8,8,0,0,1,0-16H224A8,8,0,0,1,232,208Z"></path>
+<path d="M164.44,105.34l-48-32A8,8,0,0,0,104,80v64a8,8,0,0,0,12.44,6.66l48-32a8,8,0,0,0,0-13.32ZM120,129.05V95l25.58,17Z"></path>
+</svg>
+</div>
+<p class="text-xs font-medium">Sermons</p>
+</a>
+</div>
+<div class="h-5 bg-background-light dark:bg-background-dark"></div>
+</div>
+</div>
+
+</body></html>

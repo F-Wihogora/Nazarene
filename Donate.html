@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#1173d4",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;700;900&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+      .form-radio:checked {
+        background-image: url("data:image/svg+xml,%3csvg viewBox='0 0 16 16' fill='%23ffffff' xmlns='http://www.w3.org/2000/svg'%3e%3ccircle cx='8' cy='8' r='3'/%3e%3c/svg%3e");
+      }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-zinc-900 dark:text-zinc-200">
+<div class="flex flex-col h-screen justify-between">
+<main class="flex-grow overflow-y-auto">
+<div id="zzz-header"></div>
+<div class="p-4 space-y-8">
+<div>
+<h2 class="text-lg font-semibold mb-4 text-zinc-900 dark:text-white">Select Donation Type</h2>
+<div class="space-y-3">
+<label class="flex items-center justify-between p-4 rounded-lg border border-zinc-200 dark:border-zinc-700 has-[:checked]:bg-primary has-[:checked]:text-white has-[:checked]:border-primary transition-colors">
+<span class="font-medium">Tithe</span>
+<input checked="" class="form-radio h-5 w-5 bg-transparent border-zinc-300 dark:border-zinc-600 checked:bg-primary checked:border-transparent focus:ring-0 focus:ring-offset-0" name="donation_type" type="radio"/>
+</label>
+<label class="flex items-center justify-between p-4 rounded-lg border border-zinc-200 dark:border-zinc-700 has-[:checked]:bg-primary has-[:checked]:text-white has-[:checked]:border-primary transition-colors">
+<span class="font-medium">Offering</span>
+<input class="form-radio h-5 w-5 bg-transparent border-zinc-300 dark:border-zinc-600 checked:bg-primary checked:border-transparent focus:ring-0 focus:ring-offset-0" name="donation_type" type="radio"/>
+</label>
+<label class="flex items-center justify-between p-4 rounded-lg border border-zinc-200 dark:border-zinc-700 has-[:checked]:bg-primary has-[:checked]:text-white has-[:checked]:border-primary transition-colors">
+<span class="font-medium">Building Fund</span>
+<input class="form-radio h-5 w-5 bg-transparent border-zinc-300 dark:border-zinc-600 checked:bg-primary checked:border-transparent focus:ring-0 focus:ring-offset-0" name="donation_type" type="radio"/>
+</label>
+<label class="flex items-center justify-between p-4 rounded-lg border border-zinc-200 dark:border-zinc-700 has-[:checked]:bg-primary has-[:checked]:text-white has-[:checked]:border-primary transition-colors">
+<span class="font-medium">Missionary Support</span>
+<input class="form-radio h-5 w-5 bg-transparent border-zinc-300 dark:border-zinc-600 checked:bg-primary checked:border-transparent focus:ring-0 focus:ring-offset-0" name="donation_type" type="radio"/>
+</label>
+<label class="flex items-center justify-between p-4 rounded-lg border border-zinc-200 dark:border-zinc-700 has-[:checked]:bg-primary has-[:checked]:text-white has-[:checked]:border-primary transition-colors">
+<span class="font-medium">Other</span>
+<input class="form-radio h-5 w-5 bg-transparent border-zinc-300 dark:border-zinc-600 checked:bg-primary checked:border-transparent focus:ring-0 focus:ring-offset-0" name="donation_type" type="radio"/>
+</label>
+</div>
+</div>
+<div>
+<h2 class="text-lg font-semibold mb-4 text-zinc-900 dark:text-white">Payment Method</h2>
+<div class="space-y-3">
+<label class="flex items-center justify-between p-4 rounded-lg border border-zinc-200 dark:border-zinc-700 has-[:checked]:bg-primary has-[:checked]:text-white has-[:checked]:border-primary transition-colors">
+<span class="font-medium">Mobile Money</span>
+<input checked="" class="form-radio h-5 w-5 bg-transparent border-zinc-300 dark:border-zinc-600 checked:bg-primary checked:border-transparent focus:ring-0 focus:ring-offset-0" name="payment_method" type="radio"/>
+</label>
+<label class="flex items-center justify-between p-4 rounded-lg border border-zinc-200 dark:border-zinc-700 has-[:checked]:bg-primary has-[:checked]:text-white has-[:checked]:border-primary transition-colors">
+<span class="font-medium">PayPal</span>
+<input class="form-radio h-5 w-5 bg-transparent border-zinc-300 dark:border-zinc-600 checked:bg-primary checked:border-transparent focus:ring-0 focus:ring-offset-0" name="payment_method" type="radio"/>
+</label>
+</div>
+</div>
+<div>
+<label class="text-lg font-semibold text-zinc-900 dark:text-white" for="amount">Amount</label>
+<div class="mt-4 relative">
+<span class="absolute inset-y-0 left-0 flex items-center pl-4 text-zinc-500 dark:text-zinc-400">$</span>
+<input class="w-full pl-8 pr-4 py-4 rounded-lg border border-zinc-200 dark:border-zinc-700 bg-background-light dark:bg-background-dark focus:ring-primary focus:border-primary text-zinc-900 dark:text-white placeholder-zinc-400 dark:placeholder-zinc-500" id="amount" placeholder="0.00" type="number"/>
+</div>
+</div>
+<button class="w-full bg-primary text-white font-bold py-4 rounded-lg text-lg hover:bg-primary/90 transition-colors">
+                    Donate
+                </button>
+</div>
+ </main>
+ <div id="zzz-footer"></div>
+ <script src="include-zzz.js"></script>
+</div>
+
+</body></html>

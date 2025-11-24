@@ -1,0 +1,172 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        primary: "#8B5CF6", // A warmer purple
+                        "primary-dark": "#7C3AED",
+                        "background-light": "#FDFBF8", // A warmer off-white
+                        "background-dark": "#1C1917", // A warmer dark gray
+                        "card-light": "#FFFFFF",
+                        "card-dark": "#292524",
+                        "text-light": "#1C1917",
+                        "text-dark": "#E7E5E4",
+                        "subtle-light": "#A8A29E",
+                        "subtle-dark": "#57534E",
+                        "border-light": "#E7E5E4",
+                        "border-dark": "#44403C",
+                    },
+                    fontFamily: {
+                        display: ["Inter", "sans-serif"],
+                    },
+                    borderRadius: {
+                        DEFAULT: "0.5rem",
+                        lg: "0.75rem",
+                        xl: "1rem",
+                        full: "9999px",
+                    },
+                },
+            },
+        };
+    </script>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-text-light dark:text-text-dark">
+<div class="flex flex-col h-screen">
+<header class="bg-background-light dark:bg-background-dark sticky top-0 z-10 px-4 py-3 border-b border-border-light dark:border-border-dark">
+<div class="flex items-center justify-between">
+<button class="p-2 -ml-2">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">arrow_back</span>
+</button>
+<h1 class="text-xl font-bold text-center text-text-light dark:text-text-dark">
+                    My Sermons
+                </h1>
+<button class="p-2 -mr-2">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">search</span>
+</button>
+</div>
+</header>
+<main class="flex-grow overflow-y-auto p-4 space-y-6">
+<div class="flex space-x-2">
+<button class="flex-1 bg-primary text-white font-semibold py-2 px-4 rounded-full text-sm">Favorites</button>
+<button class="flex-1 bg-card-light dark:bg-card-dark text-text-light dark:text-text-dark font-semibold py-2 px-4 rounded-full text-sm border border-border-light dark:border-border-dark">History</button>
+<button class="bg-card-light dark:bg-card-dark p-2 rounded-full border border-border-light dark:border-border-dark">
+<span class="material-symbols-outlined text-text-light dark:text-text-dark">filter_list</span>
+</button>
+</div>
+<div class="space-y-4">
+<div class="bg-card-light dark:bg-card-dark rounded-xl shadow-sm overflow-hidden">
+<div class="relative">
+<img alt="Sermon thumbnail" class="w-full h-40 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3-sbWpJ2XICblo_u22LxyB-8OdiVwixw-o0KocLv9pFD5kNIR_ZeIn2YVID9LQcgawEz887umUiCY3OVN5gN29_2t4PV4VVLElxrOaFvcO66Jqox8YplYfgHpmExRr7p3RdC7ISDymoeRPk6ApbhMD9AgjRFWM_KSB9kaChDvR_CaXwZoWoEF6sT0uJ4-EuLu6mJ7wFp1-8XPZa3O2KTdvdV3D3umCFFJKd-ivW-nENZdmUrnBjiOxKKwpfd0058wFdaQ9xjK"/>
+<div class="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">28:35</div>
+<button class="absolute top-2 right-2 bg-black/50 p-1.5 rounded-full">
+<span class="material-symbols-outlined text-white text-lg">favorite</span>
+</button>
+</div>
+<div class="p-4">
+<h3 class="font-bold text-lg">The Power of Forgiveness</h3>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Pastor John Doe | April 28, 2024</p>
+<p class="text-sm mt-2 line-clamp-2">Exploring the transformative power of forgiveness as taught in the scriptures, and how it can heal our relationships with God and others.</p>
+<div class="flex items-center justify-between mt-4">
+<div class="flex space-x-2">
+<button class="flex items-center gap-1.5 text-sm bg-primary/10 text-primary font-semibold py-2 px-3 rounded-lg">
+<span class="material-symbols-outlined text-base">play_arrow</span>
+<span>Play</span>
+</button>
+<button class="flex items-center gap-1.5 text-sm bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark font-semibold py-2 px-3 rounded-lg">
+<span class="material-symbols-outlined text-base">headphones</span>
+<span>Audio</span>
+</button>
+<button class="flex items-center gap-1.5 text-sm bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark font-semibold py-2 px-3 rounded-lg">
+<span class="material-symbols-outlined text-base">description</span>
+<span>Notes</span>
+</button>
+</div>
+<button>
+<span class="material-symbols-outlined text-subtle-light dark:text-subtle-dark">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+<div class="bg-card-light dark:bg-card-dark rounded-xl shadow-sm overflow-hidden">
+<div class="relative">
+<img alt="Sermon thumbnail" class="w-full h-40 object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuAdotIEPFDKlnPu9PYRdjAinXY9EZc0JP2e8v6CsepmzvlbJoTyixg58EcWoEbygupgvBNStvKIkqAqhoV3ZXtbLbXvaAvzELynjfifj2Nso5zXmoGnWP5aIgXxqJqKh_DCJ-cykJYbaoTKXwBh66BSGdMkWmBeJX1XoTAweKsNJ-t5dAMsJoiAzwF7dXqYojDJaccQEdEzUE8gPVRt2gSf8Hn_K9qiBNeT8WZSZ--iCisuvzRWdsm78udAlZ7GquC-dkxktfBg"/>
+<div class="absolute bottom-2 right-2 bg-black/50 text-white text-xs px-2 py-1 rounded">32:10</div>
+<button class="absolute top-2 right-2 bg-black/50 p-1.5 rounded-full">
+<span class="material-symbols-outlined text-white text-lg">favorite</span>
+</button>
+</div>
+<div class="p-4">
+<h3 class="font-bold text-lg">Living a Life of Purpose</h3>
+<p class="text-sm text-subtle-light dark:text-subtle-dark">Pastor Jane Smith | April 14, 2024</p>
+<p class="text-sm mt-2 line-clamp-2">Discovering God's unique purpose for your life and how to walk in it daily, with faith and courage.</p>
+<div class="flex items-center justify-between mt-4">
+<div class="flex space-x-2">
+<button class="flex items-center gap-1.5 text-sm bg-primary/10 text-primary font-semibold py-2 px-3 rounded-lg">
+<span class="material-symbols-outlined text-base">play_arrow</span>
+<span>Play</span>
+</button>
+<button class="flex items-center gap-1.5 text-sm bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark font-semibold py-2 px-3 rounded-lg">
+<span class="material-symbols-outlined text-base">headphones</span>
+<span>Audio</span>
+</button>
+<button class="flex items-center gap-1.5 text-sm bg-background-light dark:bg-background-dark border border-border-light dark:border-border-dark font-semibold py-2 px-3 rounded-lg">
+<span class="material-symbols-outlined text-base">description</span>
+<span>Notes</span>
+</button>
+</div>
+<button>
+<span class="material-symbols-outlined text-subtle-light dark:text-subtle-dark">more_vert</span>
+</button>
+</div>
+</div>
+</div>
+</div>
+</main>
+<nav class="bg-card-light dark:bg-card-dark border-t border-border-light dark:border-border-dark px-4 pt-2 pb-4">
+<div class="flex justify-around">
+<a class="flex flex-col items-center gap-1 text-subtle-light dark:text-subtle-dark" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Home</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-primary" href="#">
+<span class="material-symbols-outlined">menu_book</span>
+<span class="text-xs font-medium">Sermons</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-subtle-light dark:text-subtle-dark" href="#">
+<span class="material-symbols-outlined">volunteer_activism</span>
+<span class="text-xs font-medium">Give</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-subtle-light dark:text-subtle-dark" href="#">
+<span class="material-symbols-outlined">groups</span>
+<span class="text-xs font-medium">Groups</span>
+</a>
+<a class="flex flex-col items-center gap-1 text-subtle-light dark:text-subtle-dark" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</div>
+</nav>
+</div>
+
+</body></html>

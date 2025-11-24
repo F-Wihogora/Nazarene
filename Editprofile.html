@@ -1,0 +1,143 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=Newsreader:ital,opsz,wght@0,6..72,200..800;1,6..72,200..800&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#A0522D",
+                        "background-light": "#f6f7f8",
+                        "background-dark": "#101922",
+                    },
+                    fontFamily: {
+                        "display": ["Newsreader"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.25rem",
+                        "lg": "0.5rem",
+                        "xl": "0.75rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+<style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display text-gray-900 dark:text-white">
+<div class="relative flex min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 flex items-center justify-between bg-background-light dark:bg-background-dark px-4 pt-6 pb-4">
+<a href="#">
+<span class="material-symbols-outlined text-gray-700 dark:text-gray-300">arrow_back</span>
+</a>
+<h1 class="text-xl font-bold">Edit Profile</h1>
+<div class="w-6"></div>
+</header>
+<main class="p-4">
+<div class="flex flex-col items-center">
+<div class="relative">
+<img alt="Profile picture" class="w-24 h-24 rounded-full" src="https://lh3.googleusercontent.com/aida-public/AB6AXuDRr7S5F7w4daApG961B8ngUR-2QtkfN4-ka8-YKBC6Yu-_UDgNxC5ncCEf6aNzekB-13qvIoX0V6j_enIxLY2vkX_CygKzf3_nwozxtZNeUzlfwPUA2vBorAA1ElRepg6EuTN6E8-Jo4vNYR5x0UrTMbuQ5RcnUkVPLUr-5x-inycmSUcyB6snmagQFcENO25xNskVLr2EO9AlXCo2twT_OjcEm6TI55ejiXPjzSvaetwMjXpLqmMafzjioUUeciH2reuhFFGm"/>
+<button class="absolute bottom-0 right-0 bg-primary text-white rounded-full p-1">
+<span class="material-symbols-outlined text-sm">edit</span>
+</button>
+</div>
+<p class="mt-2 text-sm text-gray-600 dark:text-gray-400">Change Photo</p>
+</div>
+<form class="mt-8 space-y-4">
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="full-name">Full Name</label>
+<input class="w-full rounded-lg border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 h-12 mt-1" id="full-name" type="text" value="John Doe"/>
+</div>
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="email">Email Address</label>
+<input class="w-full rounded-lg border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 h-12 mt-1" id="email" type="email" value="johndoe@example.com"/>
+</div>
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="phone">Phone Number</label>
+<input class="w-full rounded-lg border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 h-12 mt-1" id="phone" type="tel" value="+1 234 567 890"/>
+</div>
+<div>
+<label class="text-sm font-medium text-gray-700 dark:text-gray-300" for="address">Address</label>
+<input class="w-full rounded-lg border-gray-300 dark:border-gray-700 bg-white dark:bg-gray-800 h-12 mt-1" id="address" type="text" value="123 Main St, Anytown, USA"/>
+</div>
+<div class="pt-4">
+<h2 class="text-lg font-semibold">Privacy Settings</h2>
+<div class="flex items-center justify-between mt-2">
+<span class="text-gray-700 dark:text-gray-300">Show email on public profile</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
+</label>
+</div>
+<div class="flex items-center justify-between mt-2">
+<span class="text-gray-700 dark:text-gray-300">Show phone number on public profile</span>
+<label class="relative inline-flex items-center cursor-pointer">
+<input checked="" class="sr-only peer" type="checkbox"/>
+<div class="w-11 h-6 bg-gray-200 peer-focus:outline-none rounded-full peer dark:bg-gray-700 peer-checked:after:translate-x-full peer-checked:after:border-white after:content-[''] after:absolute after:top-[2px] after:left-[2px] after:bg-white after:border-gray-300 after:border after:rounded-full after:h-5 after:w-5 after:transition-all dark:border-gray-600 peer-checked:bg-primary"></div>
+</label>
+</div>
+</div>
+<div class="flex gap-4 pt-6">
+<button class="flex-1 rounded-full border border-primary text-primary py-3" type="button">Cancel</button>
+<button class="flex-1 rounded-full bg-primary text-white py-3" type="submit">Save Changes</button>
+</div>
+</form>
+</main>
+</div>
+<div class="sticky bottom-0">
+<div class="flex gap-2 border-t border-gray-200 dark:border-gray-800 bg-background-light dark:bg-background-dark px-4 pb-3 pt-2">
+<a class="flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-gray-500 dark:text-gray-400" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">home</span>
+</div>
+<p class="text-xs font-medium">Dashboard</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-primary" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">person</span>
+</div>
+<p class="text-xs font-medium">My Profile</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 text-gray-500 dark:text-gray-400" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">event</span>
+</div>
+<p class="text-xs font-medium">Events</p>
+</a>
+<a class="flex flex-1 flex-col items-center justify-end gap-1 rounded-full text-gray-500 dark:text-gray-400" href="#">
+<div class="flex h-8 items-center justify-center">
+<span class="material-symbols-outlined">church</span>
+</div>
+<p class="text-xs font-medium">Sermons</p>
+</a>
+</div>
+<div class="h-5 bg-background-light dark:bg-background-dark"></div>
+</div>
+</div>
+
+</body></html>

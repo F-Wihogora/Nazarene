@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pastor Dashboard - Nazarene Remera Church</title>
+    <link rel="icon" href="data:image/x-icon;base64," type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?display=swap&family=Inter:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#B8860B", // Gold
+                        "secondary": "#8B0000", // Maroon
+                        "accent": "#F5F5DC", // Cream
+                        "background-light": "#FDFBF8",
+                        "background-dark": "#1a1510",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-stone-800 dark:text-stone-200">
+    <div class="flex h-screen">
+        <!-- Sidebar -->
+        <div class="w-64 bg-white dark:bg-stone-800 shadow-lg">
+            <div class="p-6">
+                <div class="flex items-center gap-2 mb-8">
+                    <img alt="Church Logo" class="h-8 w-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkd7MzECF9M0YFfxl2gitHaSMuS_F1jXqhpT3wXzKiMkZHu5MOa0u8idh_jSZe8JLk8mIzrKFiYn7YpVQa8slqQ6cLjH2Jse7-nvZHtfuIEOXRPGItcnoumexm9jk9gKkPP0lzbRP66t3tdrydpOV9tldtophK9mozYEChrB5sef5dU8HLrlmJQRZZ3IWaw2Sc-KI0J8qtfXdhsM7vzKgNh9ZP3P0BFaFsCPWFw4Sv8Y496vALJDlbJWSvWP_UYke9z9AJ8crg"/>
+                    <span class="text-lg font-bold">Pastor Dashboard</span>
+                </div>
+                
+                <!-- User Info -->
+                <div class="mb-6 p-4 bg-primary/10 rounded-lg">
+                    <div class="flex items-center gap-3">
+                        <div class="w-10 h-10 bg-primary rounded-full flex items-center justify-center text-white font-bold">
+                            PS
+                        </div>
+                        <div>
+                            <p class="font-medium">Pastor Samuel</p>
+                            <p class="text-sm text-stone-600 dark:text-stone-400">Pastor</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Navigation -->
+                <nav class="space-y-2">
+                    <a href="pastorDashboard.html" class="flex items-center gap-3 p-3 rounded-lg bg-primary text-white">
+                        <span class="material-symbols-outlined">dashboard</span>
+                        <span>Dashboard</span>
+                    </a>
+                    <a href="Sermons.html" class="flex items-center gap-3 p-3 rounded-lg text-stone-600 dark:text-stone-300 hover:bg-primary/10 hover:text-primary">
+                        <span class="material-symbols-outlined">movie</span>
+                        <span>Sermons</span>
+                    </a>
+                    <a href="addSermon.html" class="flex items-center gap-3 p-3 rounded-lg text-stone-600 dark:text-stone-300 hover:bg-primary/10 hover:text-primary">
+                        <span class="material-symbols-outlined">add_circle</span>
+                        <span>Add Sermon</span>
+                    </a>
+                    <a href="financeMan.html" class="flex items-center gap-3 p-3 rounded-lg text-stone-600 dark:text-stone-300 hover:bg-primary/10 hover:text-primary">
+                        <span class="material-symbols-outlined">account_balance</span>
+                        <span>Financial Reports</span>
+                    </a>
+                    <a href="reportsandanalytics.html" class="flex items-center gap-3 p-3 rounded-lg text-stone-600 dark:text-stone-300 hover:bg-primary/10 hover:text-primary">
+                        <span class="material-symbols-outlined">analytics</span>
+                        <span>Member Reports</span>
+                    </a>
+                    <a href="Events.html" class="flex items-center gap-3 p-3 rounded-lg text-stone-600 dark:text-stone-300 hover:bg-primary/10 hover:text-primary">
+                        <span class="material-symbols-outlined">event</span>
+                        <span>Events</span>
+                    </a>
+                    <a href="prayerrequests.html" class="flex items-center gap-3 p-3 rounded-lg text-stone-600 dark:text-stone-300 hover:bg-primary/10 hover:text-primary">
+                        <span class="material-symbols-outlined">favorite</span>
+                        <span>Prayer Requests</span>
+                    </a>
+                </nav>
+            </div>
+        </div>
+
+        <!-- Main Content -->
+        <div class="flex-1 flex flex-col">
+            <!-- Header -->
+            <header class="bg-white dark:bg-stone-800 shadow-sm border-b border-stone-200 dark:border-stone-700">
+                <div class="flex items-center justify-between p-4">
+                    <h1 class="text-2xl font-bold">Pastor Dashboard</h1>
+                    <div class="flex items-center gap-4">
+                        <button class="p-2 rounded-lg hover:bg-stone-100 dark:hover:bg-stone-700">
+                            <span class="material-symbols-outlined">notifications</span>
+                        </button>
+                        <a href="../index.html" class="px-4 py-2 text-primary border border-primary rounded-lg hover:bg-primary hover:text-white transition-colors">
+                            View Website
+                        </a>
+                    </div>
+                </div>
+            </header>
+
+            <!-- Dashboard Content -->
+            <main class="flex-1 p-6 overflow-y-auto">
+                <!-- Stats Cards -->
+                <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6 mb-8">
+                    <div class="bg-white dark:bg-stone-800 p-6 rounded-lg shadow-sm">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-stone-600 dark:text-stone-400">Total Members</p>
+                                <p class="text-3xl font-bold text-primary">1,247</p>
+                            </div>
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary text-2xl">group</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-stone-800 p-6 rounded-lg shadow-sm">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-stone-600 dark:text-stone-400">Sermons This Month</p>
+                                <p class="text-3xl font-bold text-primary">8</p>
+                            </div>
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary text-2xl">movie</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-stone-800 p-6 rounded-lg shadow-sm">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-stone-600 dark:text-stone-400">Monthly Donations</p>
+                                <p class="text-3xl font-bold text-primary">$12,450</p>
+                            </div>
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary text-2xl">account_balance</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-stone-800 p-6 rounded-lg shadow-sm">
+                        <div class="flex items-center justify-between">
+                            <div>
+                                <p class="text-sm text-stone-600 dark:text-stone-400">Prayer Requests</p>
+                                <p class="text-3xl font-bold text-primary">23</p>
+                            </div>
+                            <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                <span class="material-symbols-outlined text-primary text-2xl">favorite</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Quick Actions -->
+                <div class="grid grid-cols-1 lg:grid-cols-2 gap-6 mb-8">
+                    <div class="bg-white dark:bg-stone-800 p-6 rounded-lg shadow-sm">
+                        <h3 class="text-lg font-semibold mb-4">Quick Actions</h3>
+                        <div class="grid grid-cols-2 gap-4">
+                            <a href="addSermon.html" class="p-4 border border-stone-200 dark:border-stone-700 rounded-lg hover:bg-primary/5 hover:border-primary transition-colors">
+                                <span class="material-symbols-outlined text-primary text-2xl mb-2">add_circle</span>
+                                <p class="font-medium">Add Sermon</p>
+                            </a>
+                            <a href="Events.html" class="p-4 border border-stone-200 dark:border-stone-700 rounded-lg hover:bg-primary/5 hover:border-primary transition-colors">
+                                <span class="material-symbols-outlined text-primary text-2xl mb-2">event_available</span>
+                                <p class="font-medium">View Events</p>
+                            </a>
+                            <a href="financeMan.html" class="p-4 border border-stone-200 dark:border-stone-700 rounded-lg hover:bg-primary/5 hover:border-primary transition-colors">
+                                <span class="material-symbols-outlined text-primary text-2xl mb-2">account_balance</span>
+                                <p class="font-medium">Financial Report</p>
+                            </a>
+                            <a href="prayerrequests.html" class="p-4 border border-stone-200 dark:border-stone-700 rounded-lg hover:bg-primary/5 hover:border-primary transition-colors">
+                                <span class="material-symbols-outlined text-primary text-2xl mb-2">favorite</span>
+                                <p class="font-medium">Prayer Requests</p>
+                            </a>
+                        </div>
+                    </div>
+
+                    <div class="bg-white dark:bg-stone-800 p-6 rounded-lg shadow-sm">
+                        <h3 class="text-lg font-semibold mb-4">Recent Sermons</h3>
+                        <div class="space-y-4">
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-primary">play_circle</span>
+                                </div>
+                                <div>
+                                    <p class="font-medium">The Power of Forgiveness</p>
+                                    <p class="text-sm text-stone-500">Oct 26, 2024</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-primary">play_circle</span>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Living a Life of Purpose</p>
+                                    <p class="text-sm text-stone-500">Oct 19, 2024</p>
+                                </div>
+                            </div>
+                            <div class="flex items-center gap-3">
+                                <div class="w-12 h-12 bg-primary/10 rounded-lg flex items-center justify-center">
+                                    <span class="material-symbols-outlined text-primary">play_circle</span>
+                                </div>
+                                <div>
+                                    <p class="font-medium">Faith in Times of Trouble</p>
+                                    <p class="text-sm text-stone-500">Oct 12, 2024</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Role Information -->
+                <div class="bg-primary/10 border border-primary/20 rounded-lg p-6">
+                    <div class="flex items-start gap-4">
+                        <span class="material-symbols-outlined text-primary text-2xl">info</span>
+                        <div>
+                            <h3 class="font-semibold text-primary mb-2">Pastor Role Permissions</h3>
+                            <p class="text-sm text-stone-600 dark:text-stone-400 mb-3">
+                                As a Pastor, you have access to:
+                            </p>
+                            <ul class="text-sm text-stone-600 dark:text-stone-400 space-y-1">
+                                <li>• View financial and member reports</li>
+                                <li>• Add and manage sermons</li>
+                                <li>• View event details</li>
+                                <li>• Access prayer requests</li>
+                                <li>• View attendance data</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </main>
+        </div>
+    </div>
+</body>
+</html>

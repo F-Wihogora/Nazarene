@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Announcements</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter:wght@400;500;700;900&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1173d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .material-symbols-outlined {
+      font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+    }
+    .custom-select {
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='24' height='24' viewBox='0 0 24 24' fill='none' stroke='%231173d4' stroke-width='2' stroke-linecap='round' stroke-linejoin='round'%3E%3Cpolyline points='6 9 12 15 18 9'%3E%3C/polyline%3E%3C/svg%3E");
+        background-repeat: no-repeat;
+        background-position: right 1rem center;
+        background-size: 1.5em 1.5em;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="flex flex-col h-screen justify-between">
+<main class="flex-grow overflow-y-auto">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center justify-between p-4 border-b border-primary/20 dark:border-primary/30">
+<button class="text-primary">
+<span class="material-symbols-outlined">
+              arrow_back_ios_new
+            </span>
+</button>
+<h1 class="text-xl font-bold text-gray-900 dark:text-white">Announcements</h1>
+<div class="w-8"></div>
+</div>
+</header>
+<div class="p-4 space-y-6">
+<div>
+<label class="sr-only" for="title">Title</label>
+<input class="w-full bg-primary/10 dark:bg-primary/20 text-gray-900 dark:text-white placeholder-primary/60 dark:placeholder-primary/50 border-none rounded-lg focus:ring-2 focus:ring-primary h-12 px-4 text-base" id="title" placeholder="Title" type="text"/>
+</div>
+<div>
+<label class="sr-only" for="announcement">Announcement</label>
+<textarea class="w-full bg-primary/10 dark:bg-primary/20 text-gray-900 dark:text-white placeholder-primary/60 dark:placeholder-primary/50 border-none rounded-lg focus:ring-2 focus:ring-primary p-4 text-base" id="announcement" placeholder="Write your announcement here..." rows="8"></textarea>
+</div>
+<div>
+<h2 class="text-lg font-semibold text-gray-900 dark:text-white mb-2">Publish Date</h2>
+<div class="grid grid-cols-2 gap-4">
+<div>
+<label class="sr-only" for="date">Date</label>
+<select class="custom-select w-full bg-primary/10 dark:bg-primary/20 text-gray-900 dark:text-white border-none rounded-lg focus:ring-2 focus:ring-primary h-12 px-4 text-base" id="date">
+<option selected="">Select Date</option>
+<option>Today</option>
+<option>Tomorrow</option>
+</select>
+</div>
+<div>
+<label class="sr-only" for="time">Time</label>
+<select class="custom-select w-full bg-primary/10 dark:bg-primary/20 text-gray-900 dark:text-white border-none rounded-lg focus:ring-2 focus:ring-primary h-12 px-4 text-base" id="time">
+<option selected="">Select Time</option>
+<option>09:00 AM</option>
+<option>12:00 PM</option>
+<option>06:00 PM</option>
+</select>
+</div>
+</div>
+</div>
+</div>
+</main>
+<footer class="p-4 bg-background-light dark:bg-background-dark border-t border-primary/20 dark:border-primary/30">
+<div class="flex gap-4">
+<button class="flex-1 py-3 px-4 rounded-lg bg-primary/20 dark:bg-primary/30 text-primary font-bold text-sm">
+          Save Draft
+        </button>
+<button class="flex-1 py-3 px-4 rounded-lg bg-primary text-white font-bold text-sm">
+          Publish
+        </button>
+</div>
+</footer>
+</div>
+
+</body></html>

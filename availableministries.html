@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Ministries Management</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader%3Awght%40400%3B500%3B700%3B800&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1173d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+            "text-light": "#101922",
+            "text-dark": "#f6f7f8",
+            "text-muted-light": "#6b7280",
+            "text-muted-dark": "#9ca3af",
+            "card-light": "#ffffff",
+            "card-dark": "#1c2a38",
+            "icon-background-light": "#e5e7eb",
+            "icon-background-dark": "#374151"
+          },
+          fontFamily: {
+            "display": ["Newsreader"]
+          },
+          borderRadius: {"DEFAULT": "0.25rem", "lg": "0.5rem", "xl": "0.75rem", "full": "9999px"},
+        },
+      },
+    }
+  </script>
+<style type="text/tailwindcss">
+    @layer base {
+      body {
+        @apply font-display bg-background-light dark:bg-background-dark text-text-light dark:text-text-dark;
+      }
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body>
+<div class="flex flex-col min-h-screen">
+<div id="zzz-header"></div>
+<main class="flex-grow p-4 space-y-4">
+<div class="bg-card-light dark:bg-card-dark rounded-xl p-4">
+<h2 class="text-lg font-semibold text-text-light dark:text-text-dark mb-3">All Ministries</h2>
+<div class="space-y-3">
+<div class="flex items-center gap-4 p-3 rounded-lg hover:bg-background-light dark:hover:bg-background-dark">
+<div class="flex items-center justify-center rounded-full bg-icon-background-light dark:bg-icon-background-dark shrink-0 size-12">
+<svg class="text-text-light dark:text-text-dark" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M210.3,56.34l-80-24A8,8,0,0,0,120,40V148.26A48,48,0,1,0,136,184V98.75l69.7,20.91A8,8,0,0,0,216,112V64A8,8,0,0,0,210.3,56.34ZM88,216a32,32,0,1,1,32-32A32,32,0,0,1,88,216ZM200,101.25l-64-19.2V50.75L200,70Z"></path>
+</svg>
+</div>
+<div class="flex-grow">
+<p class="font-semibold text-text-light dark:text-text-dark">Worship Ministry</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Leader: Samuel</p>
+</div>
+<button class="p-2 rounded-full hover:bg-primary/10">
+<svg class="text-text-muted-light dark:text-text-muted-dark" fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M128,64a32,32,0,1,0,32,32A32,32,0,0,0,128,64Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,112Zm0-80a32,32,0,1,0,32,32A32,32,0,0,0,128,32Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,80Zm0,80a32,32,0,1,0,32,32A32,32,0,0,0,128,160Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,208Z"></path></svg>
+</button>
+</div>
+<div class="flex items-center gap-4 p-3 rounded-lg hover:bg-background-light dark:hover:bg-background-dark">
+<div class="flex items-center justify-center rounded-full bg-icon-background-light dark:bg-icon-background-dark shrink-0 size-12">
+<svg class="text-text-light dark:text-text-dark" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"></path>
+</svg>
+</div>
+<div class="flex-grow">
+<p class="font-semibold text-text-light dark:text-text-dark">Youth Ministry</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Leader: David</p>
+</div>
+<button class="p-2 rounded-full hover:bg-primary/10">
+<svg class="text-text-muted-light dark:text-text-muted-dark" fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M128,64a32,32,0,1,0,32,32A32,32,0,0,0,128,64Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,112Zm0-80a32,32,0,1,0,32,32A32,32,0,0,0,128,32Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,80Zm0,80a32,32,0,1,0,32,32A32,32,0,0,0,128,160Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,208Z"></path></svg>
+</button>
+</div>
+<div class="flex items-center gap-4 p-3 rounded-lg hover:bg-background-light dark:hover:bg-background-dark">
+<div class="flex items-center justify-center rounded-full bg-icon-background-light dark:bg-icon-background-dark shrink-0 size-12">
+<svg class="text-text-light dark:text-text-dark" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M117.25,157.92a60,60,0,1,0-66.5,0A95.83,95.83,0,0,0,3.53,195.63a8,8,0,1,0,13.4,8.74,80,80,0,0,1,134.14,0,8,8,0,0,0,13.4-8.74A95.83,95.83,0,0,0,117.25,157.92ZM40,108a44,44,0,1,1,44,44A44.05,44.05,0,0,1,40,108Zm210.14,98.7a8,8,0,0,1-11.07-2.33A79.83,79.83,0,0,0,172,168a8,8,0,0,1,0-16,44,44,0,1,0-16.34-84.87,8,8,0,1,1-5.94-14.85,60,60,0,0,1,55.53,105.64,95.83,95.83,0,0,1,47.22,37.71A8,8,0,0,1,250.14,206.7Z"></path>
+</svg>
+</div>
+<div class="flex-grow">
+<p class="font-semibold text-text-light dark:text-text-dark">Children's Ministry</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Leader: Esther</p>
+</div>
+<button class="p-2 rounded-full hover:bg-primary/10">
+<svg class="text-text-muted-light dark:text-text-muted-dark" fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M128,64a32,32,0,1,0,32,32A32,32,0,0,0,128,64Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,112Zm0-80a32,32,0,1,0,32,32A32,32,0,0,0,128,32Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,80Zm0,80a32,32,0,1,0,32,32A32,32,0,0,0,128,160Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,208Z"></path></svg>
+</button>
+</div>
+<div class="flex items-center gap-4 p-3 rounded-lg hover:bg-background-light dark:hover:bg-background-dark">
+<div class="flex items-center justify-center rounded-full bg-icon-background-light dark:bg-icon-background-dark shrink-0 size-12">
+<svg class="text-text-light dark:text-text-dark" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M220.2,100l-18-31.18a28,28,0,0,0-47.3-1.92L139.56,40.31a28,28,0,0,0-48.12-.63,28,28,0,0,0-43,34.78l3.34,5.79a28,28,0,0,0-22,41.92l38,65.82a87.46,87.46,0,0,0,53.43,41,88.56,88.56,0,0,0,22.92,3A88,88,0,0,0,220.2,100Zm-6.67,62.63A72,72,0,0,1,81.63,180l-38-65.82a12,12,0,0,1,20.79-12l22,38.1a8,8,0,1,0,13.85-8l-38-65.81a12,12,0,0,1,13.5-17.59,11.9,11.9,0,0,1,7.29,5.59l34,58.89a8,8,0,0,0,13.85-8l-26-45h0a12,12,0,0,1,20.78-12L160,107.78a48.08,48.08,0,0,0-11,61,8,8,0,0,0,13.86-8,32,32,0,0,1,11.71-43.71,8,8,0,0,0,2.93-10.93l-10-17.32a12,12,0,0,1,20.78-12l18,31.18A71.49,71.49,0,0,1,213.53,162.62ZM184.27,29.93a8,8,0,0,1,9.8-5.66c15.91,4.27,29,14.11,36.86,27.73a8,8,0,0,1-13.86,8c-5.72-9.92-15.36-17.12-27.14-20.27A8,8,0,0,1,184.27,29.93ZM80.91,237a8,8,0,0,1-11.24,1.33c-11-8.69-20.11-19.58-28.6-34.28a8,8,0,0,1,13.86-8c7.44,12.88,15.27,22.32,24.65,29.72A8,8,0,0,1,80.91,237Z"></path>
+</svg>
+</div>
+<div class="flex-grow">
+<p class="font-semibold text-text-light dark:text-text-dark">Outreach Ministry</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Leader: Moses</p>
+</div>
+<button class="p-2 rounded-full hover:bg-primary/10">
+<svg class="text-text-muted-light dark:text-text-muted-dark" fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M128,64a32,32,0,1,0,32,32A32,32,0,0,0,128,64Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,112Zm0-80a32,32,0,1,0,32,32A32,32,0,0,0,128,32Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,80Zm0,80a32,32,0,1,0,32,32A32,32,0,0,0,128,160Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,208Z"></path></svg>
+</button>
+</div>
+<div class="flex items-center gap-4 p-3 rounded-lg hover:bg-background-light dark:hover:bg-background-dark">
+<div class="flex items-center justify-center rounded-full bg-icon-background-light dark:bg-icon-background-dark shrink-0 size-12">
+<svg class="text-text-light dark:text-text-dark" fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M235.32,180l-36.24-36.25L162.62,23.46A21.76,21.76,0,0,0,128,12.93,21.76,21.76,0,0,0,93.38,23.46L56.92,143.76,20.68,180a16,16,0,0,0,0,22.62l32.69,32.69a16,16,0,0,0,22.63,0L124.28,187a40.68,40.68,0,0,0,3.72-4.29,40.68,40.68,0,0,0,3.72,4.29L180,235.32a16,16,0,0,0,22.63,0l32.69-32.69A16,16,0,0,0,235.32,180ZM64.68,224,32,191.32l12.69-12.69,32.69,32.69ZM120,158.75a23.85,23.85,0,0,1-7,17L88.68,200,56,167.32l13.65-13.66a8,8,0,0,0,2-3.34l37-122.22A5.78,5.78,0,0,1,120,29.78Zm23,17a23.85,23.85,0,0,1-7-17v-129a5.78,5.78,0,0,1,11.31-1.68l37,122.22a8,8,0,0,0,2,3.34l14.49,14.49-33.4,32ZM191.32,224l-12.56-12.57,33.39-32L224,191.32Z"></path>
+</svg>
+</div>
+<div class="flex-grow">
+<p class="font-semibold text-text-light dark:text-text-dark">Prayer Ministry</p>
+<p class="text-sm text-text-muted-light dark:text-text-muted-dark">Leader: Ruth</p>
+</div>
+<button class="p-2 rounded-full hover:bg-primary/10">
+<svg class="text-text-muted-light dark:text-text-muted-dark" fill="currentColor" height="20" viewBox="0 0 256 256" width="20" xmlns="http://www.w3.org/2000/svg"><path d="M128,64a32,32,0,1,0,32,32A32,32,0,0,0,128,64Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,112Zm0-80a32,32,0,1,0,32,32A32,32,0,0,0,128,32Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,80Zm0,80a32,32,0,1,0,32,32A32,32,0,0,0,128,160Zm0,48a16,16,0,1,1,16-16A16,16,0,0,1,128,208Z"></path></svg>
+</button>
+</div>
+</div>
+</div>
+</main>
+<button aria-label="Add Ministry" title="Add Ministry" class="fixed bottom-5 right-5 flex items-center justify-center gap-2 px-5 py-4 text-white rounded-full shadow-lg bg-primary hover:bg-primary/90 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-primary">
+<svg fill="currentColor" height="24px" viewBox="0 0 256 256" width="24px" xmlns="http://www.w3.org/2000/svg">
+<path d="M224,128a8,8,0,0,1-8,8H136v80a8,8,0,0,1-16,0V136H40a8,8,0,0,1,0-16h80V40a8,8,0,0,1,16,0v80h80A8,8,0,0,1,224,128Z"></path>
+</svg>
+<span class="font-bold hidden sm:inline">Add Ministry</span>
+</button>
+<div id="zzz-footer"></div>
+<script src="include-zzz.js"></script>
+</div>
+
+</body></html>

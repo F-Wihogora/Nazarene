@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta charset="utf-8"/>
+<title>Stitch Design</title>
+<link href="data:image/x-icon;base64," rel="icon" type="image/x-icon"/>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Inter%3Awght%40400%3B500%3B700%3B900&amp;family=Noto+Sans%3Awght%40400%3B500%3B700%3B900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#1173d4",
+            "background-light": "#f6f7f8",
+            "background-dark": "#101922",
+            "text-light": "#0d141b",
+            "text-dark": "#ffffff",
+            "text-secondary-light": "#4c739a",
+            "text-secondary-dark": "#a0b3c6",
+            "border-light": "#e7edf3",
+            "border-dark": "#2d3748"
+          },
+          fontFamily: {
+            "display": ["Inter"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.25rem",
+            "lg": "0.5rem",
+            "xl": "0.75rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex h-auto min-h-screen w-full flex-col justify-between overflow-x-hidden">
+<div class="flex-grow">
+<header class="sticky top-0 z-10 bg-background-light dark:bg-background-dark/80 backdrop-blur-sm border-b border-border-light dark:border-border-dark">
+<div class="flex items-center p-4">
+<button class="text-text-light dark:text-text-dark">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="text-lg font-bold text-text-light dark:text-text-dark flex-1 text-center pr-10">Upload Media</h1>
+</div>
+</header>
+<main class="p-4 space-y-6">
+<section>
+<h2 class="text-xl font-bold text-text-light dark:text-text-dark mb-4">Upload New Media</h2>
+<div class="bg-background-light dark:bg-background-dark/50 rounded-lg shadow-sm p-4 space-y-4">
+<div>
+<label class="block text-sm font-medium text-text-light dark:text-text-dark" for="song-title">Song Title</label>
+<input class="mt-1 block w-full rounded-md border-border-light dark:border-border-dark bg-background-light dark:bg-background-dark/20 text-text-light dark:text-text-dark focus:border-primary focus:ring-primary" id="song-title" placeholder="Enter song title" type="text"/>
+</div>
+<div>
+<label class="block text-sm font-medium text-text-light dark:text-text-dark" for="file-upload">Upload Files</label>
+<div class="mt-1 flex justify-center rounded-lg border-2 border-dashed border-border-light dark:border-border-dark px-6 pt-5 pb-6">
+<div class="space-y-1 text-center">
+<span class="material-symbols-outlined text-5xl text-text-secondary-light dark:text-text-secondary-dark">cloud_upload</span>
+<div class="flex text-sm text-text-secondary-light dark:text-text-secondary-dark">
+<label class="relative cursor-pointer rounded-md bg-transparent font-medium text-primary focus-within:outline-none focus-within:ring-2 focus-within:ring-primary focus-within:ring-offset-2 hover:text-primary/80" for="file-upload">
+<span>Upload a file</span>
+<input class="sr-only" id="file-upload" multiple="" name="file-upload" type="file"/>
+</label>
+<p class="pl-1">or drag and drop</p>
+</div>
+<p class="text-xs text-text-secondary-light dark:text-text-secondary-dark">Lyrics (PDF, DOCX) or Audio (MP3, WAV)</p>
+</div>
+</div>
+</div>
+<button class="w-full bg-primary text-white font-bold py-2 px-4 rounded-lg hover:bg-primary/90 transition-colors duration-200 flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">upload</span>
+              Upload Media
+            </button>
+</div>
+</section>
+<section>
+<h2 class="text-xl font-bold text-text-light dark:text-text-dark mb-4">Uploaded Files</h2>
+<div class="space-y-4">
+<div class="bg-background-light dark:bg-background-dark/50 rounded-lg shadow-sm p-4 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">lyrics</span>
+<div>
+<p class="font-medium text-text-light dark:text-text-dark">Amazing_Grace_Lyrics.pdf</p>
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Amazing Grace - 120 KB</p>
+</div>
+</div>
+<button class="text-text-secondary-light dark:text-text-secondary-dark hover:text-red-500">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+<div class="bg-background-light dark:bg-background-dark/50 rounded-lg shadow-sm p-4 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">audio_file</span>
+<div>
+<p class="font-medium text-text-light dark:text-text-dark">Amazing_Grace_Audio.mp3</p>
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">Amazing Grace - 3.5 MB</p>
+</div>
+</div>
+<button class="text-text-secondary-light dark:text-text-secondary-dark hover:text-red-500">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+<div class="bg-background-light dark:bg-background-dark/50 rounded-lg shadow-sm p-4 flex items-center justify-between">
+<div class="flex items-center gap-4">
+<span class="material-symbols-outlined text-primary text-3xl">lyrics</span>
+<div>
+<p class="font-medium text-text-light dark:text-text-dark">How_Great_Thou_Art.docx</p>
+<p class="text-sm text-text-secondary-light dark:text-text-secondary-dark">How Great Thou Art - 85 KB</p>
+</div>
+</div>
+<button class="text-text-secondary-light dark:text-text-secondary-dark hover:text-red-500">
+<span class="material-symbols-outlined">delete</span>
+</button>
+</div>
+</div>
+</section>
+</main>
+</div>
+<footer class="sticky bottom-0 bg-background-light dark:bg-background-dark/80 backdrop-blur-sm border-t border-border-light dark:border-border-dark">
+<nav class="flex justify-around p-2">
+<a class="flex flex-col items-center justify-center gap-1 text-text-secondary-light dark:text-text-secondary-dark w-1/4" href="#">
+<span class="material-symbols-outlined">home</span>
+<span class="text-xs font-medium">Dashboard</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-text-secondary-light dark:text-text-secondary-dark w-1/4" href="#">
+<span class="material-symbols-outlined">music_note</span>
+<span class="text-xs font-medium">Choir</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-primary w-1/4" href="#">
+<span class="material-symbols-outlined">upload_file</span>
+<span class="text-xs font-medium">Uploads</span>
+</a>
+<a class="flex flex-col items-center justify-center gap-1 text-text-secondary-light dark:text-text-secondary-dark w-1/4" href="#">
+<span class="material-symbols-outlined">person</span>
+<span class="text-xs font-medium">Profile</span>
+</a>
+</nav>
+</footer>
+</div>
+
+</body></html>

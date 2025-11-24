@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Rehearsal Schedule</title>
+<link crossorigin="" href="https://fonts.gstatic.com/" rel="preconnect"/>
+<link as="style" href="https://fonts.googleapis.com/css2?display=swap&amp;family=Newsreader:wght@400;500;700;800&amp;family=Noto+Sans:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+<script>
+    tailwind.config = {
+      darkMode: "class",
+      theme: {
+        extend: {
+          colors: {
+            "primary": "#d46211",
+            "background-light": "#f8f7f6",
+            "background-dark": "#221810",
+          },
+          fontFamily: {
+            "display": ["Newsreader"]
+          },
+          borderRadius: {
+            "DEFAULT": "0.5rem",
+            "lg": "1rem",
+            "xl": "1.5rem",
+            "full": "9999px"
+          },
+        },
+      },
+    }
+  </script>
+<style>
+    .form-select {
+      background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' fill='none' viewBox='0 0 20 20'%3e%3cpath stroke='%23d46211' stroke-linecap='round' stroke-linejoin='round' stroke-width='1.5' d='M6 8l4 4 4-4'/%3e%3c/svg%3e");
+      background-position: right 0.5rem center;
+      background-repeat: no-repeat;
+      background-size: 1.5em 1.5em;
+      padding-right: 2.5rem;
+      -webkit-appearance: none;
+      -moz-appearance: none;
+      appearance: none;
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+<style>
+    body {
+      min-height: max(884px, 100dvh);
+    }
+  </style>
+  </head>
+<body class="bg-background-light dark:bg-background-dark font-display">
+<div class="relative flex min-h-screen w-full flex-col">
+<header class="sticky top-0 z-10 bg-background-light/80 dark:bg-background-dark/80 backdrop-blur-sm">
+<div class="flex items-center p-4">
+<button class="text-stone-800 dark:text-stone-200">
+<span class="material-symbols-outlined">arrow_back</span>
+</button>
+<h1 class="flex-1 text-center text-xl font-bold text-stone-900 dark:text-stone-100">Rehearsal Schedule</h1>
+<button class="text-stone-800 dark:text-stone-200">
+<span class="material-symbols-outlined">notifications</span>
+</button>
+</div>
+</header>
+<main class="flex-grow p-4">
+<div class="space-y-6">
+<div>
+<h2 class="text-lg font-bold text-stone-900 dark:text-stone-100 mb-2">Upcoming Rehearsal</h2>
+<div class="rounded-xl bg-primary/10 dark:bg-primary/20 p-4 space-y-4">
+<div class="flex items-center justify-between">
+<p class="font-bold text-xl text-primary">Saturday, 20 July 2024</p>
+<span class="text-sm font-semibold text-primary py-1 px-3 rounded-full bg-primary/20">Upcoming</span>
+</div>
+<div class="space-y-2 text-stone-800 dark:text-stone-200">
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">schedule</span>
+<span>04:00 PM - 06:00 PM</span>
+</div>
+<div class="flex items-center gap-2">
+<span class="material-symbols-outlined text-primary">location_on</span>
+<span>Main Church Hall</span>
+</div>
+</div>
+<div>
+<h3 class="font-semibold text-stone-900 dark:text-stone-100 mb-2">Songs to Practice</h3>
+<ul class="list-disc list-inside space-y-1 text-stone-700 dark:text-stone-300">
+<li>"How Great Thou Art"</li>
+<li>"Amazing Grace"</li>
+<li>"10,000 Reasons (Bless the Lord)"</li>
+</ul>
+</div>
+<button class="w-full rounded-lg bg-primary py-3 text-center font-bold text-white flex items-center justify-center gap-2">
+<span class="material-symbols-outlined">add_alert</span>
+              Set Reminder
+            </button>
+</div>
+</div>
+<div>
+<h2 class="text-lg font-bold text-stone-900 dark:text-stone-100 mb-2">Past Rehearsals</h2>
+<div class="space-y-4">
+<div class="rounded-xl bg-stone-100 dark:bg-stone-800/50 p-4">
+<div class="flex items-center justify-between mb-2">
+<p class="font-semibold text-lg text-stone-800 dark:text-stone-200">Saturday, 13 July 2024</p>
+<span class="text-sm font-semibold text-stone-500 py-1 px-3 rounded-full bg-stone-200 dark:bg-stone-700">Completed</span>
+</div>
+<div class="space-y-1 text-stone-600 dark:text-stone-400">
+<div class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-base">schedule</span>
+<span>04:00 PM - 06:00 PM</span>
+</div>
+<div class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-base">location_on</span>
+<span>Main Church Hall</span>
+</div>
+<h3 class="font-semibold text-stone-700 dark:text-stone-300 pt-2">Songs Practiced:</h3>
+<ul class="list-disc list-inside text-sm">
+<li>"Victory Belongs to Jesus"</li>
+<li>"What a Beautiful Name"</li>
+</ul>
+</div>
+</div>
+<div class="rounded-xl bg-stone-100 dark:bg-stone-800/50 p-4">
+<div class="flex items-center justify-between mb-2">
+<p class="font-semibold text-lg text-stone-800 dark:text-stone-200">Saturday, 06 July 2024</p>
+<span class="text-sm font-semibold text-stone-500 py-1 px-3 rounded-full bg-stone-200 dark:bg-stone-700">Completed</span>
+</div>
+<div class="space-y-1 text-stone-600 dark:text-stone-400">
+<div class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-base">schedule</span>
+<span>04:00 PM - 06:00 PM</span>
+</div>
+<div class="flex items-center gap-2 text-sm">
+<span class="material-symbols-outlined text-base">location_on</span>
+<span>Prayer Room</span>
+</div>
+<h3 class="font-semibold text-stone-700 dark:text-stone-300 pt-2">Songs Practiced:</h3>
+<ul class="list-disc list-inside text-sm">
+<li>"Great Are You Lord"</li>
+<li>"In Christ Alone"</li>
+</ul>
+</div>
+</div>
+</div>
+</div>
+</div>
+</main>
+</div>
+
+</body></html>
