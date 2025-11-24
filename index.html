@@ -1,0 +1,201 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nazarene Remera Church - Home</title>
+    <link rel="icon" href="data:image/x-icon;base64," type="image/x-icon"/>
+    <link rel="preconnect" href="https://fonts.gstatic.com/">
+    <link href="https://fonts.googleapis.com/css2?display=swap&family=Inter:wght@400;500;700;900" onload="this.rel='stylesheet'" rel="stylesheet"/>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet"/>
+    <script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+    <script id="tailwind-config">
+        tailwind.config = {
+            darkMode: "class",
+            theme: {
+                extend: {
+                    colors: {
+                        "primary": "#B8860B", // Gold
+                        "secondary": "#8B0000", // Maroon
+                        "accent": "#F5F5DC", // Cream
+                        "background-light": "#FDFBF8",
+                        "background-dark": "#1a1510",
+                    },
+                    fontFamily: {
+                        "display": ["Inter"]
+                    },
+                    borderRadius: {
+                        "DEFAULT": "0.5rem",
+                        "lg": "1rem",
+                        "xl": "1.5rem",
+                        "full": "9999px"
+                    },
+                },
+            },
+        }
+    </script>
+    <link rel="manifest" href="/manifest.webmanifest">
+    <meta name="theme-color" content="#B8860B">
+    <style>
+        body {
+            min-height: max(884px, 100dvh);
+        }
+    </style>
+</head>
+<body class="bg-background-light dark:bg-background-dark font-display text-stone-800 dark:text-stone-200">
+    <div class="relative flex h-auto min-h-screen w-full flex-col">
+        <!-- Header -->
+        <header class="flex items-center justify-between p-4 bg-background-light dark:bg-background-dark shadow-md">
+            <div class="flex items-center gap-2">
+                <img alt="Church Logo" class="h-8 w-8" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCkd7MzECF9M0YFfxl2gitHaSMuS_F1jXqhpT3wXzKiMkZHu5MOa0u8idh_jSZe8JLk8mIzrKFiYn7YpVQa8slqQ6cLjH2Jse7-nvZHtfuIEOXRPGItcnoumexm9jk9gKkPP0lzbRP66t3tdrydpOV9tldtophK9mozYEChrB5sef5dU8HLrlmJQRZZ3IWaw2Sc-KI0J8qtfXdhsM7vzKgNh9ZP3P0BFaFsCPWFw4Sv8Y496vALJDlbJWSvWP_UYke9z9AJ8crg"/>
+                <span class="text-lg font-bold">Nazarene Remera</span>
+            </div>
+            <nav class="hidden md:flex items-center gap-6">
+                <a href="index.html" class="text-primary font-medium">Home</a>
+                <a href="zzz/about.html" class="text-stone-600 dark:text-stone-300 hover:text-primary">About</a>
+                <a href="zzz/availableministries.html" class="text-stone-600 dark:text-stone-300 hover:text-primary">Ministries</a>
+                <a href="zzz/Events.html" class="text-stone-600 dark:text-stone-300 hover:text-primary">Events</a>
+                <a href="zzz/Sermons.html" class="text-stone-600 dark:text-stone-300 hover:text-primary">Sermons</a>
+                <a href="zzz/Donate.html" class="text-stone-600 dark:text-stone-300 hover:text-primary">Donate</a>
+                <a href="zzz/contacts.html" class="text-stone-600 dark:text-stone-300 hover:text-primary">Contact</a>
+                <a href="zzz/blogpage.html" class="text-stone-600 dark:text-stone-300 hover:text-primary">Blog</a>
+            </nav>
+            <div class="flex items-center gap-2">
+                <a href="zzz/LogIn.html" class="px-4 py-2 text-primary border border-primary rounded-lg hover:bg-primary hover:text-white transition-colors">Login</a>
+                <a href="zzz/Register.html" class="px-4 py-2 bg-primary text-white rounded-lg hover:bg-primary/90 transition-colors">Register</a>
+            </div>
+            <button class="md:hidden text-stone-800 dark:text-white">
+                <span class="material-symbols-outlined text-3xl">menu</span>
+            </button>
+        </header>
+
+        <!-- Main Content -->
+        <main class="flex-grow">
+            <!-- Hero Section -->
+            <section class="relative h-64 bg-cover bg-center" style="background-image: url('https://images.unsplash.com/photo-1518709268805-4e9042af2176?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=2025&q=80')">
+                <div class="absolute inset-0 bg-black/50 flex flex-col items-center justify-center text-center text-white p-4">
+                    <h1 class="text-3xl font-bold">Welcome to Nazarene Remera Church</h1>
+                    <p class="mt-2 text-lg">A place to find hope, faith, and community.</p>
+                    <a href="zzz/Events.html" class="mt-4 flex items-center justify-center rounded-lg h-12 px-6 bg-primary text-white text-base font-bold hover:bg-primary/90 transition-colors">
+                        Join Us This Sunday
+                    </a>
+                </div>
+            </section>
+
+            <!-- Service Info -->
+            <section class="p-4">
+                <div class="rounded-lg bg-primary/10 dark:bg-primary/20 p-4 text-center">
+                    <h2 class="text-xl font-bold text-stone-800 dark:text-white">Sunday Service</h2>
+                    <p class="mt-2 text-stone-600 dark:text-stone-300">Join us this Sunday at 10:00 AM for a time of worship and fellowship.</p>
+                    <p class="mt-1 text-sm text-stone-500 dark:text-stone-400">Remera, Kigali, Rwanda</p>
+                </div>
+            </section>
+
+            <!-- Featured Sermon -->
+            <section class="p-4">
+                <h2 class="text-xl font-bold text-stone-800 dark:text-white mb-4">Featured Sermon</h2>
+                <div class="rounded-lg overflow-hidden shadow-lg">
+                    <div class="relative pb-[56.25%] h-0">
+                        <iframe allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen="" class="absolute top-0 left-0 w-full h-full" frameborder="0" src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube video player"></iframe>
+                    </div>
+                    <div class="p-4 bg-white dark:bg-stone-800">
+                        <h3 class="font-bold text-lg">The Power of Forgiveness</h3>
+                        <p class="text-sm text-stone-600 dark:text-stone-400">Pastor John Doe - May 12, 2024</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Latest Events -->
+            <section class="p-4">
+                <h2 class="text-xl font-bold text-stone-800 dark:text-white mb-4">Latest Events</h2>
+                <div class="space-y-4">
+                    <div class="flex items-center gap-4 p-4 rounded-lg bg-white dark:bg-stone-800 shadow">
+                        <div class="text-center w-16">
+                            <p class="text-sm font-bold text-primary">MAY</p>
+                            <p class="text-2xl font-bold">25</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Youth Conference</h3>
+                            <p class="text-sm text-stone-600 dark:text-stone-400">Saturday at 2:00 PM</p>
+                        </div>
+                    </div>
+                    <div class="flex items-center gap-4 p-4 rounded-lg bg-white dark:bg-stone-800 shadow">
+                        <div class="text-center w-16">
+                            <p class="text-sm font-bold text-primary">JUN</p>
+                            <p class="text-2xl font-bold">02</p>
+                        </div>
+                        <div>
+                            <h3 class="font-bold">Community Outreach</h3>
+                            <p class="text-sm text-stone-600 dark:text-stone-400">Sunday after service</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Donate CTA -->
+            <section class="p-4">
+                <a href="zzz/Donate.html" class="w-full flex items-center justify-center rounded-lg h-12 px-4 bg-green-600 text-white text-base font-bold hover:bg-green-700 transition-colors">
+                    <span class="material-symbols-outlined mr-2">favorite</span>
+                    <span>Donate</span>
+                </a>
+            </section>
+        </main>
+
+        <!-- Footer -->
+        <footer class="bg-stone-800 text-white mt-8 p-4">
+            <div class="text-center">
+                <h3 class="font-bold text-lg">Nazarene Remera Church</h3>
+                <p class="text-sm mt-1">KG 178 St, Remera, Kigali, Rwanda</p>
+                <p class="text-sm">info@nazareneremera.org</p>
+                <p class="text-sm">+250 788 123 456</p>
+            </div>
+            <div class="flex justify-center gap-4 mt-4">
+                <a class="text-white" href="#">
+                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.878v-6.987h-2.54V12h2.54V9.797c0-2.506 1.492-3.89 3.777-3.89 1.094 0 2.238.195 2.238.195v2.46h-1.26c-1.243 0-1.63.771-1.63 1.562V12h2.773l-.443 2.89h-2.33v6.988C18.343 21.128 22 16.991 22 12z" fill-rule="evenodd"></path></svg>
+                </a>
+                <a class="text-white" href="#">
+                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path d="M8.29 20.251c7.547 0 11.675-6.253 11.675-11.675 0-.178 0-.355-.012-.53A8.348 8.348 0 0022 5.92a8.19 8.19 0 01-2.357.646 4.118 4.118 0 001.804-2.27 8.224 8.224 0 01-2.605.996 4.107 4.107 0 00-6.993 3.743 11.65 11.65 0 01-8.457-4.287 4.106 4.106 0 001.27 5.477A4.072 4.072 0 012.8 9.71v.052a4.105 4.105 0 003.292 4.022 4.095 4.095 0 01-1.853.07 4.108 4.108 0 003.834 2.85A8.233 8.233 0 012 18.407a11.616 11.616 0 006.29 1.84"></path></svg>
+                </a>
+                <a class="text-white" href="#">
+                    <svg aria-hidden="true" class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24"><path clip-rule="evenodd" d="M12.315 2c2.43 0 2.784.013 3.808.06 1.064.049 1.791.218 2.427.465a4.902 4.902 0 011.772 1.153 4.902 4.902 0 011.153 1.772c.247.636.416 1.363.465 2.427.048 1.024.06 1.378.06 3.808s-.012 2.784-.06 3.808c-.049 1.064-.218 1.791-.465 2.427a4.902 4.902 0 01-1.153 1.772 4.902 4.902 0 01-1.772 1.153c-.636.247-1.363.416-2.427.465-1.024.048-1.378.06-3.808.06s-2.784-.013-3.808-.06c-1.064-.049-1.791-.218-2.427-.465a4.902 4.902 0 01-1.772-1.153 4.902 4.902 0 01-1.153-1.772c-.247-.636-.416-1.363-.465-2.427-.048-1.024-.06-1.378-.06-3.808s.012-2.784.06-3.808c.049-1.064.218-1.791.465-2.427a4.902 4.902 0 011.153-1.772A4.902 4.902 0 016.08 2.525c.636-.247 1.363-.416 2.427-.465C9.53 2.013 9.884 2 12.315 2zM12 7a5 5 0 100 10 5 5 0 000-10zm0 8a3 3 0 110-6 3 3 0 010 6zm6.406-11.845a1.25 1.25 0 100 2.5 1.25 1.25 0 000-2.5z" fill-rule="evenodd"></path></svg>
+                </a>
+            </div>
+            <div class="text-center text-xs mt-4 text-stone-400">
+                © 2024 Nazarene Remera Church. All Rights Reserved.
+            </div>
+        </footer>
+    </div>
+
+    <script>
+        // Simple navigation functionality
+        document.addEventListener('DOMContentLoaded', function() {
+            // Mobile menu toggle
+            const menuButton = document.querySelector('button[class*="md:hidden"]');
+            const nav = document.querySelector('nav[class*="hidden md:flex"]');
+            
+            if (menuButton && nav) {
+                menuButton.addEventListener('click', function() {
+                    nav.classList.toggle('hidden');
+                    nav.classList.toggle('flex');
+                    nav.classList.toggle('flex-col');
+                    nav.classList.toggle('absolute');
+                    nav.classList.toggle('top-16');
+                    nav.classList.toggle('left-0');
+                    nav.classList.toggle('right-0');
+                    nav.classList.toggle('bg-white');
+                    nav.classList.toggle('dark:bg-stone-800');
+                    nav.classList.toggle('p-4');
+                    nav.classList.toggle('shadow-lg');
+                });
+            }
+        });
+    </script>
+    <script>
+        if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+                navigator.serviceWorker.register('/service-worker.js');
+            });
+        }
+    </script>
+</body>
+</html>
